@@ -14,24 +14,24 @@ Route::get('/', function(){
 	return View::make('temp.my-first-view');
 });
 
-// Route::get('/sayhello/{name}', function($name)
-// {
-// 	$data = [
-//     	'name' => $name
-//     ];
+Route::get('/sayhello/{name}', function($name)
+{
+	$data = [
+    	'name' => $name
+    ];
 
-//     if ($name == "Chris")
-//     {
-//         return Redirect::to('/');
-//     }
-//     else
-//     {
-//         //return View::make('temp.my-first-view')->with('name', $name);
-//         return View::make('temp.my-first-view')->with($data);
-//     }
+    if ($name == "Chris")
+    {
+        return Redirect::to('/');
+    }
+    else
+    {
+        return View::make('temp.my-first-view')->with('name', $name);
+        //return View::make('temp.my-first-view')->with($data);
+    }
 
 
-// });
+});
 
 
 // Create a route for your resume page at the path '/resume' that returns 'This is my resume'.
