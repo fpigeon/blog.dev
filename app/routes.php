@@ -46,5 +46,5 @@ Route::get('/portfolio', function(){
 //Within the route, return a random number between 1 and 6.
 Route::get('/rolldice', function(){
 	$random_num =  rand (1, 6);
-	return 'The random number is ' . $random_num;
+	return View::make('temp.roll-dice')->with('random', $random_num);
 });
