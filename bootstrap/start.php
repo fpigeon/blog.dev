@@ -23,12 +23,17 @@ $app = new Illuminate\Foundation\Application;
 | given environment, then we will automatically detect it for you.
 |
 */
+// OLD
+// $env = $app->detectEnvironment(array(
 
-$env = $app->detectEnvironment(array(
+// 	'local' => array('homestead'),
 
-	'local' => array('homestead'),
+// ));
 
-));
+$env = $app->detectEnvironment(function()
+{
+ return !empty($_SERVER['LARAVEL_ENV']) && $_SERVER['LARAVEL_ENV'] == 'local' ? 'local' : 'production';
+});
 
 /*
 |--------------------------------------------------------------------------
