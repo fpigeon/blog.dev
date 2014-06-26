@@ -6,6 +6,12 @@
 </head>
 <body>
 	<h1>Roll Dice</h1>
-	<?='The roll of the dice is ' . $random ?> 
+	Your guess is <?=$guess;?> 
+	<br> 
+	The roll of the dice is <?=$random;?>
+	<br> 
+	<? if ($guess == $random) : ?>
+		Your guess was right! Yay!
+	<? endif; ?>
 </body>
 </html>

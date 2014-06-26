@@ -44,7 +44,14 @@ Route::get('/portfolio', function(){
 });
 //Create a route that responds to a GET request on the path /rolldice.
 //Within the route, return a random number between 1 and 6.
-Route::get('/rolldice', function(){
+// Modify the route to take in a parameter named guess. Someone will access the route
+// by visiting http://blog.dev/rolldice/1, where 1 is their guess.
+// Modify the route and view so that you can display the guess in addition to the roll and also tell if the guess matches the roll.
+Route::get('/rolldice/{guess}', function($guess){
 	$random_num =  rand (1, 6);
-	return View::make('temp.roll-dice')->with('random', $random_num);
+	$data = [
+		'random' => $random_num,
+		'guess' => $guess
+	];
+	return View::make('temp.roll-dice')->with($data);
 });
