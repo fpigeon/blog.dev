@@ -10,28 +10,8 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-Route::get('/', function(){
-	return View::make('temp.my-first-view');
-});
-
-Route::get('/sayhello/{name}', function($name)
-{
-	$data = [
-    	'name' => $name
-    ];
-
-    if ($name == "Chris")
-    {
-        return Redirect::to('/');
-    }
-    else
-    {
-        return View::make('temp.my-first-view')->with('name', $name);
-        //return View::make('temp.my-first-view')->with($data);
-    }
-
-
-});
+Route::get('/', 'HomeController@sayHello');
+Route::get('/sayhello/{name}', 'HomeController@sayHello');
 // Routes for blog project
 Route::get('/resume', 'HomeController@showResume');
 Route::get('/portfolio', 'HomeController@showPortfolio');
@@ -49,3 +29,5 @@ Route::get('/rolldice/{guess}', function($guess){
 	];
 	return View::make('temp.roll-dice')->with($data);
 });
+//posts conreoller
+Route::resource('posts', 'PostsController');
