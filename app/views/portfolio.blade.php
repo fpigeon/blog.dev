@@ -16,12 +16,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="portfolio">PORTFOLIO</a>
+          <a class="navbar-brand" href="{{{ action('HomeController@showPortfolio') }}}">PORTFOLIO</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="portfolio">Home</a></li>
-            <li><a href="resume" target="_blank">Resume</a></li>
+            <li class="active"><a href="{{{ action('HomeController@showPortfolio') }}}">Home</a></li>
+            <li><a href="{{{ action('HomeController@showResume') }}}" target="_blank">Resume</a></li>
             <li><a href="#works">Works</a></li>
           </ul>
         </div><!--/.nav-collapse -->

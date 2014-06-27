@@ -32,18 +32,10 @@ Route::get('/sayhello/{name}', function($name)
 
 
 });
+// Routes for blog project
+Route::get('/resume', 'HomeController@showResume');
+Route::get('/portfolio', 'HomeController@showPortfolio');
 
-
-// Create a route for your resume page at the path '/resume' that returns 'This is my resume'.
-// Create a route for your portfolio page at the path '/portfolio' that returns 'This is my portfolio'.
-Route::get('/resume', function(){
-	//return 'This is my resume';
-    return View::make('resume');
-});
-Route::get('/portfolio', function(){
-	//return 'This is my portfolio';
-    return View::make('portfolio');
-});
 //Create a route that responds to a GET request on the path /rolldice.
 //Within the route, return a random number between 1 and 6.
 // Modify the route to take in a parameter named guess. Someone will access the route
