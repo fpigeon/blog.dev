@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('topscript')
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+@stop
 @section('content')
     <div id="section-topbar">
 		<div id="topbar-inner">
@@ -45,7 +49,9 @@
 					<h5>Summary</h5>
 				</div>
 				<div class="col-lg-6">
-					<p>With over 15 years of IT experience, I am looking to broaden my horizons into web and mobile development. I am a U.S. Army veteran, hold a SECRET clearance, and have a Bachelor's Degree in Management, CIS. I am fluent in English and Spanish, a focused team player, lifetime learner, and am excited to take on new challenges that combine my creativity and business sense.</p>
+					<p>
+						With over 15 years of IT experience, looking to broaden my horizons into web and mobile development. I am a U.S. Army veteran, hold a SECRET clearance, and have a Bachelor's Degree in Management, CIS. Fluent in English and Spanish, a focused team player, lifetime learner, heart of a teacher, and excited to take on new challenges that combine my creativity and business sense.
+					</p>
 				</div>
 				<div class="col-lg-3">
 					<p><a href="/data/Frank Pigeon Resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a> <sm>DOWNLOAD PDF</sm></p>
@@ -54,6 +60,99 @@
 			</div><!--/.row -->
 		</div><!--/.container -->
 	</div><!--/ #intro -->
+
+	<!--WORK DESCRIPTION -->
+	<section id="work" name="work"></section>
+	<div class="container desc">
+		<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>WORK</h5>
+				</div>
+
+				<div class="col-lg-6">
+					<p><t>Freelance Web Developer</t><br/>
+						Self-Employed <br/>
+					</p>
+					<p><more>Platform/Environment: Hypertext Markup Language (HTML), Linux, Mac OSX, VirtualBox, Vagrant, Ansible, Apache, mySQL, PHP, Git, GitHub, JavaScript, jQuery, Cascading Style Sheets (CSS), Bootstrap framework, WordPress Content Management System (CMS), Moment.js API, Adobe Photoshop, Adobe Illustrator, and Adobe Premiere Pro.</more></p>
+					<ul>
+						<li>
+							Design, develop, and maintain web sites and applications using the LAMP Stack.
+						</li>
+						<li>
+							Maintain web site for Hope Arise United Methodist Church using the WordPress CMS.
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>MAY 2014 - CURRENT</sm></p>
+				</div>
+
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>IT Project Manager</t><br/>
+						Operations Training Support, G6, AMEDDC&S <br/>
+					</p>
+					<p><more>Provides project management support during the planning, development, testing and implementation of new systems in support of the Army Medical Department, Military Health Systems, and the Medical Command. Support includes project planning, control, reporting, risk management, scheduling, tracking, variance analysis and administrative support throughout the life cycle of the project.</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JUNE 2010 - CURRENT</sm></p>
+				</div>
+
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>IT Specialist</t><br/>
+						Operations Support, G6, AMEDDC&S <br/>
+					</p>
+					<p><more>Coordinates deployment services provided by the local Network Enterprise Center (NEC) to AMEDDC&S functional users. Manages AMEDDC&S involvement in the initial deployment, subsequent movement, and technology refresh of computer equipment, printers, copiers, and telephones</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>MARCH 2008 - JUNE 2010</sm></p>
+				</div>
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Forward Deployed Tech</t><br/>
+						Defense Medical Readiness Training Institute <br/>
+					</p>
+					<p><more>Responsible for the daily operations of the Information Management Office as resident technical expert on all ADPE (Automated Data Processing Equipment), communications products, and audio / visual equipment, and networks assigned to the DMRTI command spanning four buildings and two installations (Ft. Sam Houston and Camp Bullis) in a senior joint military environment.</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JUNE 2006 - FEBRUARY 2008</sm></p>
+				</div>
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Systems Engineer</t><br/>
+						Directorate of Information Management <br/>
+					</p>
+					<p><more>Responsible for the deployment, installation, configuration, and operation of all IT equipment acquired through the DOIM working independently or on a team of IT specialists in a dynamic, fast paced environment while maintaining DOD (Department of Defense) standards and guidelines. Installed, configured, repaired, deployed, troubleshoot personal computers and peripheral devices, and operating systems.</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>MARCH 2005 - JUN 2006</sm></p>
+				</div>
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Systems Research Specialist</t><br/>
+						U.S. Army South <br/>
+					</p>
+					<p><more>Responsible for the deployment, installation, configuration, and operation of all IT equipment acquired through the DOIM working independently or on a team of IT specialists in a dynamic, fast paced environment while maintaining DOD (Department of Defense) standards and guidelines. Installed, configured, repaired, deployed, troubleshoot personal computers and peripheral devices, and operating systems.</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JULY 2004 - MARCH 2005</sm></p>
+				</div>
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Staff Sargeant</t><br/>
+						U.S. Army <br/>
+					</p>
+					<p><more>Served in various positions during military career:</more></p>
+					<ul>
+						<li>Information Technology Center Supervisor, Chief Information Office, Carlisle Barracks, PA</li>
+						<li>Information Technology Team Leader, Directorate of Strategic Systems, U.S. Army War College</li>
+						<li>Computer Technician, Directorate of Educational Technology, Ft. Leavenworth, KS</li>
+						<li>Computer Operator Analyst (74B)</li>
+					</ul>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JUNE 1997 - OCTOBER 2003</sm></p>
+				</div>
+		</div><!--/.row -->
+		<br>
+		<hr>		
+	</div><!--/.container -->
 
 	<!--EDUCATION DESCRIPTION -->
 	<section id="education" name="education"></section>	
@@ -152,82 +251,8 @@
 				</div>
 		
 		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
-
-	<!--WORK DESCRIPTION -->
-	<section id="work" name="work"></section>
-	<div class="container desc">
-		<div class="row">
-
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>WORK</h5>
-				</div>
-				<div class="col-lg-6">
-					<p><t>IT Project Manager</t><br/>
-						Operations Training Support, G6, AMEDDC&S <br/>
-					</p>
-					<p><more>Provides project management support during the planning, development, testing and implementation of new systems in support of the Army Medical Department, Military Health Systems, and the Medical Command. Support includes project planning, control, reporting, risk management, scheduling, tracking, variance analysis and administrative support throughout the life cycle of the project.</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>JUNE 2010 - CURRENT</sm></p>
-				</div>
-	
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>IT Specialist</t><br/>
-						Operations Support, G6, AMEDDC&S <br/>
-					</p>
-					<p><more>Coordinates deployment services provided by the local Network Enterprise Center (NEC) to AMEDDC&S functional users. Manages AMEDDC&S involvement in the initial deployment, subsequent movement, and technology refresh of computer equipment, printers, copiers, and telephones</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>MARCH 2008 - JUNE 2010</sm></p>
-				</div>
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Forward Deployed Tech</t><br/>
-						Defense Medical Readiness Training Institute <br/>
-					</p>
-					<p><more>Responsible for the daily operations of the Information Management Office as resident technical expert on all ADPE (Automated Data Processing Equipment), communications products, and audio / visual equipment, and networks assigned to the DMRTI command spanning four buildings and two installations (Ft. Sam Houston and Camp Bullis) in a senior joint military environment.</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>JUNE 2006 - FEBRUARY 2008</sm></p>
-				</div>
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Systems Engineer</t><br/>
-						Directorate of Information Management <br/>
-					</p>
-					<p><more>Responsible for the deployment, installation, configuration, and operation of all IT equipment acquired through the DOIM working independently or on a team of IT specialists in a dynamic, fast paced environment while maintaining DOD (Department of Defense) standards and guidelines. Installed, configured, repaired, deployed, troubleshoot personal computers and peripheral devices, and operating systems.</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>MARCH 2005 - JUN 2006</sm></p>
-				</div>
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Systems Research Specialist</t><br/>
-						U.S. Army South <br/>
-					</p>
-					<p><more>Responsible for the deployment, installation, configuration, and operation of all IT equipment acquired through the DOIM working independently or on a team of IT specialists in a dynamic, fast paced environment while maintaining DOD (Department of Defense) standards and guidelines. Installed, configured, repaired, deployed, troubleshoot personal computers and peripheral devices, and operating systems.</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>JULY 2004 - MARCH 2005</sm></p>
-				</div>
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Staff Sargeant</t><br/>
-						U.S. Army <br/>
-					</p>
-					<p><more>Served in various positions during military career:</more></p>
-					<ul>
-						<li>Information Technology Center Supervisor, Chief Information Office, Carlisle Barracks, PA</li>
-						<li>Information Technology Team Leader, Directorate of Strategic Systems, U.S. Army War College</li>
-						<li>Computer Technician, Directorate of Educational Technology, Ft. Leavenworth, KS</li>
-						<li>Computer Operator Analyst (74B)</li>
-					</ul>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>JUNE 1997 - OCTOBER 2003</sm></p>
-				</div>
-		</div><!--/.row -->
 		<br>		
-	</div><!--/.container -->		
+	</div><!--/.container -->
 
 	<section id="contact" name="contact"></section>
 	<!--FOOTER DESCRIPTION -->
