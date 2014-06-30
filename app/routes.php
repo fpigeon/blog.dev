@@ -31,3 +31,7 @@ Route::get('/rolldice/{guess}', function($guess){
 });
 //posts conreoller
 Route::resource('posts', 'PostsController');
+//new blog post
+// Route::get ('/create', function(){
+// 	return View::make('posts.create');
+// });
