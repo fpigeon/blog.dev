@@ -31,9 +31,9 @@ class PostsController extends \BaseController {
 	 * @return Response
 	 */
 	public function store()
-	{
+	{		
+		Log::info(Input::all());
 		return Redirect::back()->withInput();
-
 	}
 
 
@@ -44,7 +44,8 @@ class PostsController extends \BaseController {
 	 * @return Response
 	 */
 	public function show($id)
-	{
+	{		
+		App::abort(404);
 		return ('Show a specific post ' . $id);
 	}
 
