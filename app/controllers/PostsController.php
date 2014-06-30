@@ -9,7 +9,9 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		return ('Show a list of all posts');
+		//return ('Show a list of all posts');
+		$posts = Post::all();
+		return View::make('posts.index')->with('posts', $posts);
 	}
 
 
@@ -45,8 +47,8 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{		
-		App::abort(404);
-		return ('Show a specific post ' . $id);
+		$post = Post::find($id);
+		return View::make('posts.show')->with('post', $post);		
 	}
 
 

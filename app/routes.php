@@ -31,3 +31,32 @@ Route::get('/rolldice/{guess}', function($guess){
 });
 //posts controller
 Route::resource('posts', 'PostsController');
+
+Route::get('orm-test', function(){
+	// {{{ $post  = new Post(); }}}
+	// {{{ $posts = Post::all(); }}}
+	// {{{ foreach ($posts as $post) }}}
+	// {{{ echo $post->title . "<br>"; }}}
+	// {{{ echo $post->body . "<br>"; }}}
+
+	// $post  = new Post();
+	// $posts = Post::all();
+	// foreach ($posts as $post) {
+	// 	echo $post->title . "<br>";
+	// 	echo $post->body . "<br>";
+	// }
+	// return $posts;
+
+	//find post 1 and update title
+	$post  = Post::find(2);
+	echo $post->title . "<br>";
+	echo $post->body . "<br>"; 
+	$post->title = ("This is a NEW title");
+	// $post->save();
+
+	//delete post one
+	// $post  = Post::find(1);
+	// //or use findorFail for friendly 
+	// $post->delete();
+	return "Eleoquent ORM is Eloquent";
+});
