@@ -9,8 +9,8 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		//return ('Show a list of all posts');
-		$posts = Post::all();
+		//return ('Show a list of all posts');		
+		$posts = Post::paginate(4);
 		return View::make('posts.index')->with('posts', $posts);
 	}
 
@@ -23,7 +23,7 @@ class PostsController extends \BaseController {
 	public function create()
 	{
 		//return ('Show a form for creating a post');
-		return View::make('posts.create');		
+		return View::make('posts.create-edit');		
 	}
 
 
@@ -74,7 +74,7 @@ class PostsController extends \BaseController {
 	public function edit($id)
 	{
 		$post = Post::find($id);
-		return View::make('posts.update')->with('post', $post);
+		return View::make('posts.create-edit')->with('post', $post);
 	}
 
 
