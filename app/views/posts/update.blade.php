@@ -8,8 +8,8 @@
 	<h1>New Blog Post</h1>	
 	{{ $errors->first('title', '<span class="help-block">:message</span>') }}
 	{{ $errors->first('body', '<span class="help-block">:message</span>') }}
-
-	{{ Form::open(array('action' => 'PostsController@store' )) }}	
+	
+	{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}	
 		{{ Form::label('title', 'Title') }}
 		{{ Form::text('title') }}
 		<!-- <label for="title">Blog Title</label>
@@ -21,7 +21,7 @@
 		{{ Form::textarea('body', null, array('cols' => '30', 'rows' => '10', 'placeholder' => 'Blog Content') )}}
 	    <!-- <textarea name="body" id="body" cols="30" rows="10" placeholder="Blog Content">{{{ Input::old('body') }}}</textarea> -->
 	    <br>
-	    {{ Form::submit('Create New Blog Post') }}
+	    {{ Form::submit('Update Blog Post') }}
 	    <!-- <button type="submit" class="button">Create New Blog</button> -->
 	{{ Form::close() }}
 </div>
