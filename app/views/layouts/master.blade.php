@@ -9,8 +9,7 @@
     <link rel="shortcut icon" href="assets/ico/favicon.ico">    
     <title>Frank Pigeon's Blog</title>
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <!-- <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet"> -->
@@ -34,10 +33,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
-    <script src="assets/js/Chart.js"></script>    
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/smoothscroll.js"></script> 
+    <script src="/assets/js/Chart.js"></script>    
+    <script src="/assets/js/bootstrap.js"></script>
     @yield('bottomscript')
 </body>
 </html>
