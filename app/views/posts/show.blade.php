@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('topscript')
     <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
 @stop
 @section('content')
 <div class="container">
