@@ -7,7 +7,7 @@
 @section('content')
 <div class="container">
 	<h1>All Blog Posts</h1>
-		
+
 	@foreach ($posts as $post)
 		<!-- <h2>{{{  $post->title }}}</h2> -->
 		<h2>{{ link_to_action('PostsController@show', $post->title, array($post->id) ) }} </h2>

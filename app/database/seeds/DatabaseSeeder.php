@@ -36,14 +36,14 @@ class PostTableSeeder extends Seeder {
     public function run()
     {
         DB::table('posts')->delete();
-        
+
         for ($i = 1; $i <= 10; $i++){
-        	$post = new Post();			
+        	$post = new Post();
 	        $post->title = 'Post' .  $i;
 	        $post->body = 'Post Body ' . $i;
 	        $post->save();
         } //end of for loop
-        
+
     } //end of function run
 
 }

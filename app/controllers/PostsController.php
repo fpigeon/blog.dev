@@ -123,7 +123,6 @@ class PostsController extends \BaseController {
 		$post->delete();
 		Session::flash('successMessage', 'Post successfully deleted');
 		return Redirect::action('PostsController@index');
-	}
+	}  //end of destroy
 
-
-}
+} //end of PostController
