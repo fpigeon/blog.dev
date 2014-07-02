@@ -10,10 +10,7 @@
     <title>Frank Pigeon's Blog</title>
     <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <!-- <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- Custom fonts -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'> 
@@ -28,6 +25,14 @@
     @yield('topscript')
 </head>
 <body>
+    <!-- flash messages -->
+    @if (Session::has('successMessage'))
+        <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
+    @endif
+    @if (Session::has('errorMessage'))
+        <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
+    @endif
+    <!-- body content starts here -->
     @yield('content')
 
     <!-- Bootstrap core JavaScript

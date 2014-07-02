@@ -5,12 +5,13 @@
 @stop
 @section('content')
 <div class="container">
-	<h1>{{{ $post->title }}}</h1>
+	<a href="{{ action('PostsController@edit', $post->id) }}"><h1>{{{ $post->title }}}</h1>	</a>
 	<!-- display post content   -->		
-	<h5>	{{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A') }}}</h5>
-	<p>	{{{ $post->created_at->diffForHumans() }}}</p>
-
-	<p>{{{ $post->body }}}</p>
-	<a href="{{ action('PostsController@edit', $post->id) }}" class="btn btn-default btn-small">Edit</a>
+	<h5> {{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i A') }}} </h5>
+	<p>	{{{ $post->created_at->diffForHumans() }}} </p>
+	<p> {{{ $post->body }}} </p>	
+	{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE')) }}
+		{{ Form::submit('Delete') }}
+	{{ Form::close() }}
 </div>
 @stop

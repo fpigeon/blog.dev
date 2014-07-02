@@ -33,11 +33,10 @@ class PostsController extends \BaseController {
 	 * @return Response
 	 */
 	public function store()
-	{		
-		//Log::info(Input::all());
-		//return Redirect::back()->withInput();
+	{			
 		$validator = Validator::make(Input::all(), Post::$rules);
 		if($validator->fails()){
+			Session::flash('errorMessage', 'Post failed');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} // if it fails
 		else{
@@ -46,7 +45,8 @@ class PostsController extends \BaseController {
 			$post->body = Input::get('body');
 			$post->save();
 
-			return Redirect::action('PostsController@index');
+			Session::flash('successMessage', 'Post successfully created');
+			return Redirect::action('PostsController@index');			
 		} //end of else
 		
 	}
@@ -60,7 +60,7 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{		
-		$post = Post::find($id);
+		$post = Post::findorFail($id);
 		return View::make('posts.show')->with('post', $post);				
 	}
 
@@ -88,6 +88,7 @@ class PostsController extends \BaseController {
 	{
 		$validator = Validator::make(Input::all(), Post::$rules);
 		if($validator->fails()){
+			Session::flash('errorMessage', 'Post failed');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} // if it fails
 		else{
@@ -96,6 +97,7 @@ class PostsController extends \BaseController {
 			$post->body = Input::get('body');
 			$post->save();
 
+			Session::flash('successMessage', 'Post updated created');
 			return Redirect::action('PostsController@show', $post->id)->with('post', $post);			
 		} //end of else
 	}
@@ -109,7 +111,10 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		return ('Delete a specific post');
+		$post = Post::findorFail($id);
+		$post->delete();
+		Session::flash('successMessage', 'Post successfully deleted');
+		return Redirect::action('PostsController@index');
 	}
 
 

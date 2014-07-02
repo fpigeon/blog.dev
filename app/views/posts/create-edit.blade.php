@@ -12,14 +12,12 @@
 		<h1>New Blog Post</h1>
 		{{ Form::open(array('action' => 'PostsController@store' )) }}		
 	@endif
-		
+		<!-- errors on page -->
 		{{ $errors->first('title', '<span class="help-block">:message</span>') }}
 		{{ $errors->first('body', '<span class="help-block">:message</span>') }}
-			
+		<!-- new form  -->	
 		{{ Form::label('title', 'Title') }}
-		{{ Form::text('title') }}
-		<!-- <label for="title">Blog Title</label>
-	    <input id="title" name="title" type="title" placeholder="blog title" value="{{{	Input::old('title') }}}"> -->
+		{{ Form::text('title') }}		
 	    <br>
 	    {{ Form::label('body', 'Blog Content') }}
 		<!-- <label for="body">Blog Body</label> -->
