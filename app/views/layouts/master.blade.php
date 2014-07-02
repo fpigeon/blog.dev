@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>   
+ <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Frank Pigeon's Blog'">
     <meta name="author" content="Fank Pigeon">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">    
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <title>Frank Pigeon's Blog</title>
     <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
     <!-- Custom fonts -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'> 
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -39,8 +39,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/js/smoothscroll.js"></script> 
-    <script src="/assets/js/Chart.js"></script>    
+    <script type="text/javascript" src="/assets/js/smoothscroll.js"></script>
+    <script src="/assets/js/Chart.js"></script>
     <script src="/assets/js/bootstrap.js"></script>
     @yield('bottomscript')
 </body>

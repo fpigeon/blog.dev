@@ -18,7 +18,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		//return ('Show a list of all posts');		
+		//return ('Show a list of all posts');
 		$posts = Post::paginate(4);
 		return View::make('posts.index')->with('posts', $posts);
 	}
@@ -32,7 +32,7 @@ class PostsController extends \BaseController {
 	public function create()
 	{
 		//return ('Show a form for creating a post');
-		return View::make('posts.create-edit');		
+		return View::make('posts.create-edit');
 	}
 
 
@@ -42,7 +42,7 @@ class PostsController extends \BaseController {
 	 * @return Response
 	 */
 	public function store()
-	{			
+	{
 		$validator = Validator::make(Input::all(), Post::$rules);
 		if($validator->fails()){
 			Session::flash('errorMessage', 'Post failed');
@@ -55,9 +55,8 @@ class PostsController extends \BaseController {
 			$post->save();
 
 			Session::flash('successMessage', 'Post successfully created');
-			return Redirect::action('PostsController@index');			
+			return Redirect::action('PostsController@index');
 		} //end of else
-		
 	}
 
 
@@ -68,9 +67,9 @@ class PostsController extends \BaseController {
 	 * @return Response
 	 */
 	public function show($id)
-	{		
+	{
 		$post = Post::findorFail($id);
-		return View::make('posts.show')->with('post', $post);				
+		return View::make('posts.show')->with('post', $post);
 	}
 
 
@@ -107,7 +106,7 @@ class PostsController extends \BaseController {
 			$post->save();
 
 			Session::flash('successMessage', 'Post updated created');
-			return Redirect::action('PostsController@show', $post->id)->with('post', $post);			
+			return Redirect::action('PostsController@show', $post->id)->with('post', $post);
 		} //end of else
 	}
 
