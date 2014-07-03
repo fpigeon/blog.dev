@@ -4,11 +4,11 @@ class PostsController extends \BaseController {
 
 	public function __construct()
 	{
-    // call base controller constructor
-    parent::__construct();
+	    // call base controller constructor
+	    parent::__construct();
 
-    // run auth filter before all methods on this controller except index and show
-    $this->beforeFilter('auth.basic', array('except' => array('index', 'show')));
+	    // run auth filter before all methods on this controller except index and show
+	    $this->beforeFilter('auth.basic', array('except' => array('index', 'show')));
 	} // end __construct
 
 	/**
@@ -26,9 +26,7 @@ class PostsController extends \BaseController {
 			'posts'=> $posts,
 			'isSearchFound' => $isSearchFound
 		];
-
 		//return ('Show a list of all posts');
-
 		return View::make('posts.index')->with($data);
 	}
 
@@ -53,11 +51,13 @@ class PostsController extends \BaseController {
 	public function store()
 	{
 		$validator = Validator::make(Input::all(), Post::$rules);
-		if($validator->fails()){
+		if($validator->fails())
+		{
 			Session::flash('errorMessage', 'Post failed');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} // if it fails
-		else{
+		else
+		{
 			$post = new Post();
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
@@ -66,8 +66,7 @@ class PostsController extends \BaseController {
 			Session::flash('successMessage', 'Post successfully created');
 			return Redirect::action('PostsController@index');
 		} //end of else
-	}
-
+	} // end of store function
 
 	/**
 	 * Display the specified resource.
@@ -92,7 +91,7 @@ class PostsController extends \BaseController {
 	{
 		$post = Post::find($id);
 		return View::make('posts.create-edit')->with('post', $post);
-	}
+	} // end of edit function
 
 
 	/**
@@ -104,11 +103,13 @@ class PostsController extends \BaseController {
 	public function update($id)
 	{
 		$validator = Validator::make(Input::all(), Post::$rules);
-		if($validator->fails()){
+		if($validator->fails())
+		{
 			Session::flash('errorMessage', 'Post failed');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} // if it fails
-		else{
+		else
+		{
 			$post = Post::find($id);
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
@@ -117,7 +118,7 @@ class PostsController extends \BaseController {
 			Session::flash('successMessage', 'Post updated created');
 			return Redirect::action('PostsController@show', $post->id)->with('post', $post);
 		} //end of else
-	}
+	} // end of update function
 
 
 	/**
@@ -132,6 +133,6 @@ class PostsController extends \BaseController {
 		$post->delete();
 		Session::flash('successMessage', 'Post successfully deleted');
 		return Redirect::action('PostsController@index');
-	}  //end of destroy
+	}  //end of destroy function
 
 } //end of PostController

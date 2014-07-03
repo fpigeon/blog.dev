@@ -14,8 +14,8 @@ class DatabaseSeeder extends Seeder {
 		$this->call('UserTableSeeder');
 		$this->call('PostTableSeeder');
 
-	}
-}
+	}  //end of function run
+} //end of class DatabaseSeeder
 
 class UserTableSeeder extends Seeder {
 
@@ -30,8 +30,8 @@ class UserTableSeeder extends Seeder {
             $user->save();
         }
 
-    }
-}
+    } //end of function run
+} //end of class UserTableSeeder
 
 class PostTableSeeder extends Seeder {
 
@@ -51,4 +51,4 @@ class PostTableSeeder extends Seeder {
 
     } //end of function run
 
-}
+} //end of class PostTableSeeder

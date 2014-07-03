@@ -15,18 +15,16 @@
     {{ Form::close() }}
     <!-- display all posts -->
     @foreach ($posts as $post)
-        <!-- <h2>{{{  $post->title }}}</h2> -->
         <h2>{{ link_to_action('PostsController@show', $post->title, array($post->id) ) }} </h2>
-        <!-- <p>{{{$post->body }}}</p>       -->
-        <!-- <a href="{{ action('PostsController@edit', $post->id) }}" class="btn btn-default btn-small">Edit</a> -->
     @endforeach
     <a href="{{ action('PostsController@create') }}" class="btn btn-default btn-small">New Post</a>
+
+    <!-- show all posts button on return of a search -->
     @if ($isSearchFound)
     <a href="{{ action('PostsController@index') }}" class="btn btn-default btn-small">All Posts</a>
     @endif
     <!-- pagination -->
     {{ $posts->links() }}
-
 </div>
 
 @stop

@@ -11,6 +11,7 @@
 	<h5>	{{{ $post->created_at->diffForHumans() }}} </h5>
 	<h5> created by: {{{ $post->user->email }}}</h5>
 	<p> {{{ $post->body }}} </p>
+	<!-- delete post button -->
 	{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE')) }}
 		{{ Form::submit('Delete') }}
 	{{ Form::close() }}
