@@ -54,13 +54,13 @@ Route::get('orm-test', function(){
 	//find post 1 and update title
 	$post  = Post::find(2);
 	echo $post->title . "<br>";
-	echo $post->body . "<br>"; 
+	echo $post->body . "<br>";
 	$post->title = ("This is a NEW title");
 	// $post->save();
 
 	//delete post one
 	// $post  = Post::find(1);
-	// //or use findorFail for friendly 
+	// //or use findorFail for friendly
 	// $post->delete();
 	return "Eloquent ORM is Eloquent";
 });

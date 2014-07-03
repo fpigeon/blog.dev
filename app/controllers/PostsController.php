@@ -18,9 +18,18 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
+		//$posts = Post::with('user')->paginate(4);
+		$searchField = Input::get('search');
+		$posts = Post::with('user')->where ('title', 'LIKE', '%' . $searchField . '%' )->orderBy('created_at', 'desc')->paginate(4);
+		$isSearchFound = ($searchField != '') ? TRUE : FALSE ;
+		$data = [
+			'posts'=> $posts,
+			'isSearchFound' => $isSearchFound
+		];
+
 		//return ('Show a list of all posts');
-		$posts = Post::paginate(4);
-		return View::make('posts.index')->with('posts', $posts);
+
+		return View::make('posts.index')->with($data);
 	}
 
 

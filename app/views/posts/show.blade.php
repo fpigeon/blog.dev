@@ -8,7 +8,8 @@
 	<a href="{{ action('PostsController@edit', $post->id) }}"><h1>{{{ $post->title }}}</h1>	</a>
 	<!-- display post content   -->
 	<h5> {{{ $post->created_at->format('l, F jS Y @ h:i A') }}} </h5>
-	<p>	{{{ $post->created_at->diffForHumans() }}} </p>
+	<h5>	{{{ $post->created_at->diffForHumans() }}} </h5>
+	<h5> created by: {{{ $post->user->email }}}</h5>
 	<p> {{{ $post->body }}} </p>
 	{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE')) }}
 		{{ Form::submit('Delete') }}

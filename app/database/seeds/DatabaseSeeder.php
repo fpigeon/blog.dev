@@ -23,12 +23,14 @@ class UserTableSeeder extends Seeder {
     {
         DB::table('users')->delete();
 
-        $user = new User();
-        $user->email = 'admin@codeup.com';
-        $user->password = Hash::make('adminPass123!');
-        $user->save();
-    }
+        for ($i = 1; $i <= 3; $i++){
+            $user = new User();
+            $user->email = 'user'. $i . '@codeup.com';
+            $user->password = Hash::make('password');
+            $user->save();
+        }
 
+    }
 }
 
 class PostTableSeeder extends Seeder {
@@ -37,11 +39,14 @@ class PostTableSeeder extends Seeder {
     {
         DB::table('posts')->delete();
 
-        for ($i = 1; $i <= 10; $i++){
+        for ($i = 1; $i <= 10; $i++)
+        {
         	$post = new Post();
-	        $post->title = 'Post' .  $i;
-	        $post->body = 'Post Body ' . $i;
-	        $post->save();
+            $post->title = 'Post' .  $i;
+            $post->body = 'Post Body ' . $i;
+            $post->user_id = rand(1, 3);
+            $post->save();
+            sleep(1);
         } //end of for loop
 
     } //end of function run
