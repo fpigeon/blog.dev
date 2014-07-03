@@ -10,12 +10,9 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-Route::get('/', 'HomeController@showPortfolio');
-Route::get('/sayhello/{name}', 'HomeController@sayHello');
-// Routes for blog project
-Route::get('/resume', 'HomeController@showResume');
-Route::get('/portfolio', 'HomeController@showPortfolio');
 
+//examples from exercises
+Route::get('/sayhello/{name}', 'HomeController@sayHello');
 //Create a route that responds to a GET request on the path /rolldice.
 //Within the route, return a random number between 1 and 6.
 // Modify the route to take in a parameter named guess. Someone will access the route
@@ -29,9 +26,16 @@ Route::get('/rolldice/{guess}', function($guess){
 	];
 	return View::make('temp.roll-dice')->with($data);
 });
-//posts controller
+
+// Routes for blog project
+Route::get('/', 'HomeController@showPortfolio');
+Route::get('/resume', 'HomeController@showResume');
+Route::get('/portfolio', 'HomeController@showPortfolio');
+
+//Posts controller
 Route::resource('posts', 'PostsController');
 
+//testing connection to db
 Route::get('orm-test', function(){
 	// {{{ $post  = new Post(); }}}
 	// {{{ $posts = Post::all(); }}}
@@ -58,5 +62,5 @@ Route::get('orm-test', function(){
 	// $post  = Post::find(1);
 	// //or use findorFail for friendly 
 	// $post->delete();
-	return "Eleoquent ORM is Eloquent";
+	return "Eloquent ORM is Eloquent";
 });
