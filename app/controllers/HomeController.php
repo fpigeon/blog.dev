@@ -25,10 +25,10 @@ class HomeController extends \BaseController {
         return View::make('portfolio');
     } //end of showPortfolio
 
-    // public function showConnect()
-    // {
-    //     return View::make('connect');
-    // } //end of showConnect
+    public function showConnect()
+    {
+        return View::make('connect');
+    } //end of showConnect
 
     //example from class
     public function showWelcome()

@@ -48,7 +48,7 @@
                 <li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <!-- <li><a href="{{{ action('HomeController@showConnect') }}}">Connect with Me</a></li> -->
+                <li><a href="{{{ action('HomeController@showConnect') }}}">Connect with Me</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
