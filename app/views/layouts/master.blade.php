@@ -60,7 +60,9 @@
     @if (Session::has('errorMessage'))
         <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
     @endif
-
+    @if (Session::has('infoMessage'))
+        <div class="alert alert-info">{{{ Session::get('infoMessage') }}}</div>
+    @endif
     <!-- body content starts here -->
     @yield('content')
 

@@ -58,6 +58,7 @@ class PostsController extends \BaseController {
         else
         {
             $post = new Post();
+            $post->user_id = Auth::user()->id;
             $post->title = Input::get('title');
             $post->body = Input::get('body');
             $post->save();

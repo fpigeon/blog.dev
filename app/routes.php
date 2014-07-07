@@ -19,15 +19,15 @@ Route::get('/sayhello/{name}', 'HomeController@sayHello');
 // by visiting http://blog.dev/rolldice/1, where 1 is their guess.
 // Modify the route and view so that you can display the guess in addition to the roll and also tell if the guess matches the roll.
 Route::get('/rolldice/{guess}', function($guess){
-	$random_num =  rand (1, 6);
-	$data = [
-		'random' => $random_num,
-		'guess' => $guess
-	];
-	return View::make('temp.roll-dice')->with($data);
+    $random_num =  rand (1, 6);
+    $data = [
+        'random' => $random_num,
+        'guess' => $guess
+    ];
+    return View::make('temp.roll-dice')->with($data);
 });
 
-// Routes for blog project
+//Routes for blog project
 Route::get('/', 'HomeController@showPortfolio');
 Route::get('/resume', 'HomeController@showResume');
 Route::get('/portfolio', 'HomeController@showPortfolio');
@@ -42,30 +42,30 @@ Route::resource('posts', 'PostsController');
 
 //testing connection to db
 Route::get('orm-test', function(){
-	// {{{ $post  = new Post(); }}}
-	// {{{ $posts = Post::all(); }}}
-	// {{{ foreach ($posts as $post) }}}
-	// {{{ echo $post->title . "<br>"; }}}
-	// {{{ echo $post->body . "<br>"; }}}
+    // {{{ $post  = new Post(); }}}
+    // {{{ $posts = Post::all(); }}}
+    // {{{ foreach ($posts as $post) }}}
+    // {{{ echo $post->title . "<br>"; }}}
+    // {{{ echo $post->body . "<br>"; }}}
 
-	// $post  = new Post();
-	// $posts = Post::all();
-	// foreach ($posts as $post) {
-	// 	echo $post->title . "<br>";
-	// 	echo $post->body . "<br>";
-	// }
-	// return $posts;
+    // $post  = new Post();
+    // $posts = Post::all();
+    // foreach ($posts as $post) {
+    //  echo $post->title . "<br>";
+    //  echo $post->body . "<br>";
+    // }
+    // return $posts;
 
-	//find post 1 and update title
-	$post  = Post::find(2);
-	echo $post->title . "<br>";
-	echo $post->body . "<br>";
-	$post->title = ("This is a NEW title");
-	// $post->save();
+    //find post 1 and update title
+    $post  = Post::find(2);
+    echo $post->title . "<br>";
+    echo $post->body . "<br>";
+    $post->title = ("This is a NEW title");
+    // $post->save();
 
-	//delete post one
-	// $post  = Post::find(1);
-	// //or use findorFail for friendly
-	// $post->delete();
-	return "Eloquent ORM is Eloquent";
+    //delete post one
+    // $post  = Post::find(1);
+    // //or use findorFail for friendly
+    // $post->delete();
+    return "Eloquent ORM is Eloquent";
 });

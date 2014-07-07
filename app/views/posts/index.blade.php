@@ -10,12 +10,12 @@
          <!-- show user email -->
          {{ auth::user()->email }}
          <!-- show create post -->
-         <a href="{{ action('PostsController@create') }}" class="btn btn-default btn-small">New Post</a>
+         <a href="{{ action('PostsController@create') }}" class="btn btn-primary btn-small">New Post</a>
          <!-- show logout -->
-         <a href="{{ action('HomeController@logout') }}" class="btn btn-default btn-small">Log Out</a>
+         <a href="{{ action('HomeController@logout') }}" class="btn btn-danger btn-small">Log Out</a>
     @else
          <!-- show login -->
-         {{ link_to_action('HomeController@showLogin', 'Log In' ) }}
+         <a href="{{ action('HomeController@showLogin') }}" class="btn btn-primary btn-small">Log In</a>
     @endif
 </div>
 <div class="container">
@@ -34,7 +34,7 @@
 
     <!-- show all posts button on return of a search -->
     @if ($isSearchFound)
-    <a href="{{ action('PostsController@index') }}" class="btn btn-default btn-small">All Posts</a>
+    <a href="{{ action('PostsController@index') }}" class="btn btn-primary btn-small">All Posts</a>
     @endif
     <!-- pagination -->
     {{ $posts->links() }}
