@@ -62,6 +62,11 @@ class PostsController extends \BaseController {
             $post->title = Input::get('title');
             $post->body = Input::get('body');
             $post->save();
+            if (Input::hasFile('image') && Input::file('image')->isValid())
+            {
+                $post->addUploadedImage(Input::file('image'));
+                $post->save();
+            } //end if
 
             Session::flash('successMessage', 'Post successfully created');
             return Redirect::action('PostsController@index');

@@ -10,7 +10,7 @@
          <!-- show user email -->
          {{ auth::user()->email }}
          <!-- show create post -->
-         <a href="{{ action('PostsController@create') }}" class="btn btn-primary btn-small">New Post</a>
+         <a href="{{ action('PostsController@create') }}" class="btn btn-success btn-small">New Post</a>
          <!-- show logout -->
          <a href="{{ action('HomeController@logout') }}" class="btn btn-danger btn-small">Log Out</a>
     @else
