@@ -1,6 +1,6 @@
 <?php
 
-class HomeController extends BaseController {
+class HomeController extends \BaseController {
 
     /*
     |--------------------------------------------------------------------------
@@ -15,25 +15,25 @@ class HomeController extends BaseController {
     |
     */
 
+    public function showResume()
+    {
+        return View::make('resume');
+    } //end of showResume
+
+    public function showPortfolio()
+    {
+        return View::make('portfolio');
+    } //end of showPortfolio
+
+    // public function showConnect()
+    // {
+    //     return View::make('connect');
+    // } //end of showConnect
+
+    //example from class
     public function showWelcome()
     {
         return Redirect::action('HomeController@sayHello', ['codeUp']);
     } //end of showWelcome
 
-    public function showResume(){
-        return View::make('resume');
-    } //end of showResume
-
-    public function showPortfolio(){
-        return View::make('portfolio');
-    } //end of showPortfolio
-
-    public function sayHello($name) {
-    $data = [
-        'name' => $name
-    ];
-
-        //return View::make('temp.my-first-view')->with('name', $name);
-        return View::make('temp.my-first-view')->with($data);
-    }
 } // end of Home Controller
