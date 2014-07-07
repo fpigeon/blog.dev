@@ -31,6 +31,7 @@ Route::get('/rolldice/{guess}', function($guess){
 Route::get('/', 'HomeController@showPortfolio');
 Route::get('/resume', 'HomeController@showResume');
 Route::get('/portfolio', 'HomeController@showPortfolio');
+Route::get('/connect', 'HomeController@showConnect');
 
 //Posts controller
 Route::resource('posts', 'PostsController');
