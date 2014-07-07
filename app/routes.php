@@ -32,6 +32,10 @@ Route::get('/', 'HomeController@showPortfolio');
 Route::get('/resume', 'HomeController@showResume');
 Route::get('/portfolio', 'HomeController@showPortfolio');
 Route::get('/connect', 'HomeController@showConnect');
+//Login and logout
+Route::get('/login', 'HomeController@showLogin');
+Route::post('/login', 'HomeController@doLogin');
+Route::get('/logout', 'HomeController@logout');
 
 //Posts controller
 Route::resource('posts', 'PostsController');
