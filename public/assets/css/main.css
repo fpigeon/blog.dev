@@ -49,7 +49,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
+    color: #2C2C29;
     text-decoration: none;
     outline: 0;
 }
@@ -130,22 +130,26 @@ a:after {
   border-left: 1px solid #222;
 }
 
-	#section-topbar ul#nav a:hover {
+#section-topbar ul#nav a:hover {
 	  background: #222;
 	  text-decoration: none;
 	  border-left: 1px solid #111;
-	}
+}
 
-	#section-topbar ul#nav .active a {
+#section-topbar ul#nav .active a {
 		background: #44bbaa;
 		border-left: 1px solid #111;
-	}
+}
 
-		#section-topbar ul#nav .active a:hover {
+#section-topbar ul#nav .active a:hover {
 			background: #44bbaa;
-		}
+	}
 #section-topbar i {
 	font-size: 25px;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+text-decoration: none;
+background-color: #2C2C29;
 }
 /*---------------------------------------------------
 	SECTION WRAPS
@@ -153,7 +157,7 @@ a:after {
 
 /* Header Wrap */
 #headerwrap {
-	background: url(/img/pigeon-banner.jpg) no-repeat center top;
+	background: url(/img/pigeon-banner2.jpg) no-repeat center top;
 	margin-top: 60px;
 	padding-top:140px;
 	text-align:center;
@@ -161,7 +165,7 @@ a:after {
 	background-position: center center;
 	min-height: 500px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -176,6 +180,7 @@ a:after {
 #headerwrap h1 {
 	font-size: 80px;
 	color: white;
+	margin: 140px 0px 0px 0px;
 }
 
 #headerwrap h3 {
@@ -190,7 +195,7 @@ a:after {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	color: white;
-} 
+}
 
 #intro h5, p {
 	color: white;

@@ -56,8 +56,8 @@
             <div class="row centered">
                 <div class="col-lg-12">
                     <!-- banner has text -->
-                    <!-- <h1>Frank S. Pigeon Jr.</h1>
-                    <h3>Web Developer | frank.pigeonjr@gmail.com</h3> -->
+                    <h1>Frank S. Pigeon Jr.</h1>
+                    <h3>Web Developer | frank.pigeonjr@gmail.com</h3>
                 </div><!--/.col-lg-12 -->
             </div><!--/.row -->
         </div><!--/.container -->
