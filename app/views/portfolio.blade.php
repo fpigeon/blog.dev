@@ -30,6 +30,8 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, aspernatur, eveniet, eligendi temporibus voluptas fuga voluptatum laborum alias ea rem sint soluta. Totam, maxime, provident porro harum illum.
                 </p>
                 <p>
+                    <a href="#" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
+
                     <a href="https://github.com/fpigeon/Web_Todo_List" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
@@ -40,17 +42,21 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, aspernatur, eveniet, eligendi temporibus voluptas fuga voluptatum laborum alias ea rem sint soluta. Totam, maxime, provident porro harum illum.
                 </p>
                 <p>
+                    <a href="#" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
+
                     <a href="https://github.com/fpigeon/Codeup_Web_Exercises/blob/master/public/address_book.php" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
                 <a href="#work"><img src="assets/img/portfolio/folio03.png" class="img-responsive"></a>
-                <h4>BlackJack Challenge</h4>
+                <h4>Whack-A-Mole</h4>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, aspernatur, eveniet, eligendi temporibus voluptas fuga voluptatum laborum alias ea rem sint soluta. Totam, maxime, provident porro harum illum.
                 </p>
                 <p>
-                    <a href="https://github.com/fpigeon/blackjack" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
+                    <a href="{{{ action('HomeController@showWhack') }}}" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
+
+                    <a href="https://github.com/fpigeon/Codeup_Web_Exercises/blob/master/public/whack.html" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">

@@ -30,6 +30,11 @@ class HomeController extends \BaseController {
         return View::make('connect');
     } //end of showConnect
 
+    public function showWhack()
+    {
+        return View::make('portfolio.whack');
+    } //end of showPortfolio
+
     public function showLogin()
     {
         return View::make('login');
