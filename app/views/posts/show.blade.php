@@ -17,7 +17,8 @@
 	@endif
 	<!-- delete post button -->
 	{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE')) }}
-		{{ Form::submit('Delete') }}
+		<!--{{ Form::submit('Delete') }}-->
+		<button type="submit" class="btn btn-sm btn-danger">Delete</button>
 	{{ Form::close() }}
 </div>
 @stop

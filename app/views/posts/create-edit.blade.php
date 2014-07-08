@@ -22,13 +22,12 @@
         {{ Form::file('image') }}
         <h5>Uploaded images are recommeded to be 200px by 200px</h5>
         {{ Form::label('body', 'Blog Content') }}
-        <!-- <label for="body">Blog Body</label> -->
         <br>
         {{ Form::textarea('body', null, array('cols' => '30', 'rows' => '10', 'placeholder' => 'Blog Content') )}}
         <br>
 
-        {{ Form::submit('Save Post') }}
-        <!-- <button type="submit" class="button">Create New Blog</button> -->
+        <!--{{ Form::submit('Save Post') }}-->
+        <button type="submit" class="btn btn-sm btn-primary">Save Post</button>
     {{ Form::close() }}
 
 </div>

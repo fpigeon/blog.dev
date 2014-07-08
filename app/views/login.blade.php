@@ -11,7 +11,7 @@
 
     <h1><span class="glyphicon glyphicon-lock"></span>Please Log In</h1>
     {{ Form::open(array('action' => 'HomeController@doLogin', 'class' => 'form-signin')) }}
-    <!-- new form  -->
+    <!-- new post form  -->
     {{ Form::label('email', 'Email') }}
     {{ Form::email('email') }}
     <br>
