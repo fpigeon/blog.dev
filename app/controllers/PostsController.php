@@ -50,6 +50,7 @@ class PostsController extends \BaseController {
     public function store()
     {
         $validator = Validator::make(Input::all(), Post::$rules);
+
         if($validator->fails())
         {
             Session::flash('errorMessage', 'Post failed');
@@ -57,10 +58,12 @@ class PostsController extends \BaseController {
         } // if it fails
         else
         {
+            //return $purifier->purify($value);
             $post = new Post();
             $post->user_id = Auth::user()->id;
             $post->title = Input::get('title');
             $post->body = Input::get('body');
+            //$post->body = $purifier->purify(Input::get('body'));
             $post->save();
             if (Input::hasFile('image') && Input::file('image')->isValid())
             {
@@ -108,6 +111,7 @@ class PostsController extends \BaseController {
     public function update($id)
     {
         $validator = Validator::make(Input::all(), Post::$rules);
+
         if($validator->fails())
         {
             Session::flash('errorMessage', 'Post failed');
@@ -119,6 +123,11 @@ class PostsController extends \BaseController {
             $post->title = Input::get('title');
             $post->body = Input::get('body');
             $post->save();
+            if (Input::hasFile('image') && Input::file('image')->isValid())
+            {
+                $post->addUploadedImage(Input::file('image'));
+                $post->save();
+            } //end if
 
             Session::flash('successMessage', 'Post updated created');
             return Redirect::action('PostsController@show', $post->id)->with('post', $post);

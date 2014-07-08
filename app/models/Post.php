@@ -8,7 +8,7 @@ class Post extends BaseModel {
 
     // validation rules for our model properties
     static public $rules = [
-    	'title' => 'required|max:100 ',
+    	'title' => 'required|max:100',
     	'body' => 'required|max:100'
     ];
 
@@ -23,5 +23,14 @@ class Post extends BaseModel {
         $imageName = $this->id . '-' . $image->getClientOriginalName();
         $image->move($systemPath, $imageName);
         $this->img_path = '/' . $this->imgDir . '/' . $imageName;
-    }// end of user
+    }// end of addUpLoadedImage
+
+    public function renderBody()
+    {
+        $dirtyHTML = Parsedown::instance()->parse($this->body);
+        $config = HTMLPurifier_Config::createDefault();
+        $purifier = new HTMLPurifier($config);
+        return $purifier->purify($dirtyHTML);
+    } //end of renderBody
+
 } // end of Post model for our blog posts db

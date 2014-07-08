@@ -10,7 +10,7 @@
 	<h5> {{{ $post->created_at->format('l, F jS Y @ h:i A') }}} </h5>
 	<h5>	{{{ $post->created_at->diffForHumans() }}} </h5>
 	<h5> created by: {{{ $post->user->email }}}</h5>
-	<p> {{{ $post->body }}} </p>
+	<p> {{ $post->renderBody() }} </p>
 	@if ($post->img_path)
 		<!-- show image here -->
 		<img src=" {{{ $post->img_path }}}" class="img-responsive">
