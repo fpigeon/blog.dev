@@ -2,6 +2,10 @@
 @section('topscript')
     <!-- Custom styles for this template -->
     <link href="/assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/pagedown/demo.css" />
+    <script type="text/javascript" src="/pagedown/Markdown.Converter.js"></script>
+    <script type="text/javascript" src="/pagedown/Markdown.Sanitizer.js"></script>
+    <script type="text/javascript" src="/pagedown/Markdown.Editor.js"></script>
 @stop
 @section('content')
 <div class="container">
@@ -22,14 +26,26 @@
         {{ Form::file('image') }}
         <h5>Uploaded images are recommeded to be 200px by 200px</h5>
         {{ Form::label('body', 'Blog Content') }}
-        <br>
-        {{ Form::textarea('body', null, array('cols' => '30', 'rows' => '10', 'placeholder' => 'Blog Content') )}}
-        <br>
+        <div class="wmd-panel">
+            <div id="wmd-button-bar"></div>
+            {{ Form::textarea('body', null, array('cols' => '45', 'rows' => '10', 'placeholder' => 'Blog Content',
+            'class' => 'wmd-input', 'id' => 'wmd-input')) }}
+        </div>
+        <div id="wmd-preview" class="wmd-panel wmd-preview"></div>
 
-        <!--{{ Form::submit('Save Post') }}-->
         <button type="submit" class="btn btn-sm btn-primary">Save Post</button>
     {{ Form::close() }}
 
 </div>
 
+@stop
+
+@section('bottomscript')
+<script type="text/javascript">
+            (function () {
+                var converter1 = Markdown.getSanitizingConverter();
+                var editor1 = new Markdown.Editor(converter1);
+                editor1.run();
+            })();
+        </script>
 @stop
