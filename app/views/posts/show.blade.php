@@ -4,12 +4,11 @@
     <link href="/assets/css/style.css" rel="stylesheet">
 @stop
 @section('content')
-<div class="container">
+<div class="container col-md-8 col-md-offset-2">
 	<a href="{{ action('PostsController@edit', $post->id) }}"><h1>{{{ $post->title }}}</h1>	</a>
 	<!-- display post content   -->
 	<h5> {{{ $post->created_at->format('l, F jS Y @ h:i A') }}} </h5>
-	<h5>	{{{ $post->created_at->diffForHumans() }}} </h5>
-	<h5> created by: {{{ $post->user->email }}}</h5>
+	<h6>	{{{ $post->created_at->diffForHumans() }}} by {{{ $post->user->email }}}</h6>
 	<p> {{ $post->renderBody() }} </p>
 	@if ($post->img_path)
 		<!-- show image here -->

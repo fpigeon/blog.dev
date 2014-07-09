@@ -5,38 +5,46 @@
 @stop
 
 @section('content')
-<div class="container pull-right">
-    @if (Auth::check())
-         <!-- show user email -->
-         {{ auth::user()->email }}
-         <!-- show create post -->
-         <a href="{{ action('PostsController@create') }}" class="btn btn-success btn-small">New Post</a>
-         <!-- show logout -->
-         <a href="{{ action('HomeController@logout') }}" class="btn btn-danger btn-small">Log Out</a>
-    @else
-         <!-- show login -->
-         <a href="{{ action('HomeController@showLogin') }}" class="btn btn-primary btn-small">Log In</a>
-    @endif
-</div>
-<div class="container">
-    <h1>All Blog Posts</h1>
-    <!-- search field -->
-    {{ Form::open(array('action' => 'PostsController@index', 'method' => 'GET')) }}
-        {{ Form::label('search', 'Search Posts') }}
-        {{ Form::text('search') }}
-        {{ Form::submit('Search') }}
-    {{ Form::close() }}
+<div class="container col-md-8 col-md-offset-2">
+    <div class="row">
+        <div class="col-md-offset-6">
+            @if (Auth::check())
+                 <!-- show user email -->
+                 <span class="glyphicon glyphicon-user"></span>{{ auth::user()->email }}
+                 <!-- show create post -->
+                 <a href="{{ action('PostsController@create') }}" class="btn btn-primary btn-sm" alt="New Post"><span class="glyphicon glyphicon-bullhorn"></span></a>
+                 <!-- show logout -->
+                 <a href="{{ action('HomeController@logout') }}" class="btn btn-danger btn-sm" alt="Log Out"><span class="glyphicon glyphicon-log-out"></span></a>
+            @else
+                 <!-- show login -->
+                 <a href="{{ action('HomeController@showLogin') }}" class="btn btn-primary" alt="Log In"><span class="glyphicon glyphicon-log-in"></span></a>
+            @endif
+        </div>
 
-    <!-- display all posts -->
-    @foreach ($posts as $post)
-        <h2>{{ link_to_action('PostsController@show', $post->title, array($post->id) ) }} </h2>
-    @endforeach
+    </div>
+    <div>
+        <h1>All Blog Posts</h1>
+        <!-- search field -->
+        {{ Form::open(array('action' => 'PostsController@index', 'method' => 'GET')) }}
+            {{ Form::label('search', 'Search Posts') }}
+            {{ Form::text('search') }}
+            {{ Form::submit('Search') }}
+        {{ Form::close() }}
 
-    <!-- show all posts button on return of a search -->
-    @if ($isSearchFound)
-    <a href="{{ action('PostsController@index') }}" class="btn btn-primary btn-small">All Posts</a>
-    @endif
-    <!-- pagination -->
-    {{ $posts->links() }}
+        <!-- display all posts -->
+        @foreach ($posts as $post)
+            <h2>{{ link_to_action('PostsController@show', $post->title, array($post->id) ) }} </h2>
+        @endforeach
+
+        <!-- show all posts button on return of a search -->
+        @if ($isSearchFound)
+        <a href="{{ action('PostsController@index') }}" class="btn btn-primary btn-small">All Posts</a>
+        @endif
+        <!-- pagination -->
+        {{ $posts->links() }}
+    </div>
 </div>
+
+
+
 @stop

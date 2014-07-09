@@ -34,7 +34,7 @@
                         <ul id="nav" class="nav">
                             <li class="menu-item"><a class="smoothScroll" href="#summary" title="Summary Statement"><i class="fa fa-user"></i></a></li>
                             <li class="menu-item"><a class="smoothScroll" href="#work" title="Work Experience"><i class="fa fa-suitcase"></i></a></li>
-                            <li class="menu-item"><a class="smoothScroll" href="#education" title="Education"><i class="fa fa-graduation-cap"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#education" title="Education"><i class="fa fa-pencil-square-o"></i></a></li>
                             <li class="menu-item"><a class="smoothScroll" href="#certs" title="Certifications"><i class="fa fa-certificate"></i></a></li>
                             <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="fa fa-wechat"></i></a></li>
                         </ul><!--/ uL#nav -->

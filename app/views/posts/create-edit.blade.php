@@ -8,7 +8,7 @@
     <script type="text/javascript" src="/pagedown/Markdown.Editor.js"></script>
 @stop
 @section('content')
-<div class="container">
+<div class="container col-md-8 col-md-offset-2">
     @if (isset($post))
         <h1>Edit Post</h1>
         {{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT', 'files' => true)) }}
