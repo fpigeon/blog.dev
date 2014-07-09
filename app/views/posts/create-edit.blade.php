@@ -24,7 +24,7 @@
         {{ Form::text('title') }}
         <br>
         {{ Form::file('image') }}
-        <h5>Uploaded images are recommeded to be 200px by 200px</h5>
+        <h5>Uploaded images are recommended to be 200px by 200px</h5>
         {{ Form::label('body', 'Blog Content') }}
         <div class="wmd-panel">
             <div id="wmd-button-bar"></div>

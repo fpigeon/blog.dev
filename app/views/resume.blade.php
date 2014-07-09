@@ -74,7 +74,7 @@
                 </div>
                 <div class="col-lg-6">
                     <p>
-                        Stuff goes here.
+                        With over 15 years of IT experience, I'm looking to broaden my horizons into web and mobile development. I'm a U.S. Army veteran, hold a SECRET clearance, and have a Bachelor's Degree in Management, CIS. Fluent in English and Spanish, a focused team player, lifetime learner, heart of a teacher, and excited to take on new challenges that combine my creativity and business sense.
                     </p>
                 </div>
                 <div class="col-lg-3">
@@ -105,6 +105,9 @@
                         </li>
                         <li>
                             Maintain web site for Hope Arise United Methodist Church using the WordPress CMS.
+                        </li>
+                        <li>
+                            Design and develop web games using Javascript and JQuery.
                         </li>
                     </ul>
                 </div>
