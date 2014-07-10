@@ -41,7 +41,7 @@
                 <hr>
                 <h5><span class="glyphicon glyphicon-time"></span> Posted on {{{ $post->created_at->format('l, F jS Y @ h:i A') }}}</h5>
                 <hr>
-                <p> {{ Str::limit($post->renderBody(), 40) }} </p>
+                <p> {{ Str::limit($post->renderBody(), 200) }} </p>
             @endforeach
 
             <!-- show all posts button on return of a search -->

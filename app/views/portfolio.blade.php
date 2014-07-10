@@ -24,25 +24,25 @@
             <h1>My Portfolio</h1>
 
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-                <a href="#work"><img src="assets/img/portfolio/folio01.png" class="img-responsive"></a>
+                <a href="#work"><img src="assets/img/portfolio/todo.jpg" class="img-responsive"></a>
                 <h4>Todo List</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, aspernatur, eveniet, eligendi temporibus voluptas fuga voluptatum laborum alias ea rem sint soluta. Totam, maxime, provident porro harum illum.
+                    The application was built using PHP, MySQL, HTML and CSS and it allows for adding new items, removing completed items, uploading a todo list.
                 </p>
                 <p>
-                    <a href="#" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
+                    <!-- <a href="#" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a> -->
 
                     <a href="https://github.com/fpigeon/Web_Todo_List" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-                <a href="#work"><img src="assets/img/portfolio/folio02.png" class="img-responsive"></a>
+                <a href="#work"><img src="assets/img/portfolio/address.jpg" class="img-responsive"></a>
                 <h4>Address Book</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, aspernatur, eveniet, eligendi temporibus voluptas fuga voluptatum laborum alias ea rem sint soluta. Totam, maxime, provident porro harum illum.
+                    The application was built using PHP, MySQL, HTML and CSS and it allows for adding new addresses, removing completed addresses, uploading an exisiting address book.
                 </p>
                 <p>
-                    <a href="#" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
+                    <!-- <a href="#" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a> -->
 
                     <a href="https://github.com/fpigeon/Codeup_Web_Exercises/blob/master/public/address_book.php" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
@@ -51,7 +51,7 @@
                 <a href="#work"><img src="assets/img/portfolio/whack_a_mole.jpg" class="img-responsive"></a>
                 <h4>Whack-A-Mole</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, aspernatur, eveniet, eligendi temporibus voluptas fuga voluptatum laborum alias ea rem sint soluta. Totam, maxime, provident porro harum illum.
+                    The game randomly has moles pop out of holes and the object of the game is to hit the moles and have them go back in their hole. My version of the game was built using HTML, CSS, and jQuery.
                 </p>
                 <p>
                     <a href="{{{ action('HomeController@showWhack') }}}" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
@@ -60,30 +60,30 @@
                 </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-                <a href="#work"><img src="assets/img/portfolio/folio04.png" class="img-responsive"></a>
+                <a href="#work"><img src="assets/img/portfolio/code.jpg" class="img-responsive"></a>
                 <h4>High Low Game</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, aspernatur, eveniet, eligendi temporibus voluptas fuga voluptatum laborum alias ea rem sint soluta. Totam, maxime, provident porro harum illum.
+                    The game picks a random number between 1 and 100. It prompts the user to take a guess and outputs higher, lower, or good guess. Written in PHP.
                 </p>
                 <p>
                     <a href="https://github.com/fpigeon/High_Low" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-                <a href="#work"><img src="assets/img/portfolio/folio05.png" class="img-responsive"></a>
+                <a href="#work"><img src="assets/img/portfolio/regis.jpg" class="img-responsive"></a>
                 <h4>Regis University Classwork</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, aspernatur, eveniet, eligendi temporibus voluptas fuga voluptatum laborum alias ea rem sint soluta. Totam, maxime, provident porro harum illum.
+                    Check out my project exercises the Computer Science courses I completed at Regis University. Written in C++.
                 </p>
                 <p>
                     <a href="https://github.com/fpigeon/Regis-University-CS-classwork" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-                <a href="#work"><img src="assets/img/portfolio/folio06.png" class="img-responsive"></a>
+                <a href="#work"><img src="assets/img/portfolio/code.jpg" class="img-responsive"></a>
                 <h4>Fizz Buzz Challenge</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, aspernatur, eveniet, eligendi temporibus voluptas fuga voluptatum laborum alias ea rem sint soluta. Totam, maxime, provident porro harum illum.
+                    The application prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”. Written in PHP.
                 </p>
                 <p>
                     <a href="https://github.com/fpigeon/CodeUp_Exercises/blob/master/fizzbuzz.php" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>

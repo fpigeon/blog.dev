@@ -95,7 +95,7 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <p><t>Freelance Web Developer</t><br/>
+                    <p><t>Full Stack Web Developer</t><br/>
                         Self-Employed <br/>
                     </p>
                     <p><more>Platform/Environment: Hypertext Markup Language (HTML), Linux, Mac OSX, VirtualBox, Vagrant, Ansible, Apache, mySQL, PHP, Git, GitHub, JavaScript, jQuery, Cascading Style Sheets (CSS), Bootstrap framework, WordPress Content Management System (CMS), Moment.js API, Adobe Photoshop, Adobe Illustrator, and Adobe Premiere Pro.</more></p>
