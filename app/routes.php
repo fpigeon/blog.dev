@@ -42,7 +42,8 @@ Route::get('/logout', 'HomeController@logout');
 Route::resource('posts', 'PostsController');
 
 //testing connection to db
-Route::get('orm-test', function(){
+Route::get('orm-test', function()
+{
     // {{{ $post  = new Post(); }}}
     // {{{ $posts = Post::all(); }}}
     // {{{ foreach ($posts as $post) }}}

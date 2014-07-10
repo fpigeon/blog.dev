@@ -34,6 +34,7 @@
         <!-- display all posts -->
         @foreach ($posts as $post)
             <h2>{{ link_to_action('PostsController@show', $post->title, array($post->id) ) }} </h2>
+            <h5>written by {{ $post->user->first_name }} {{ $post->user->last_name }}</h5>
         @endforeach
 
         <!-- show all posts button on return of a search -->

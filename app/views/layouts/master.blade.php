@@ -51,12 +51,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
-                <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
-                <li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
+                <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
+                <li class="{{ Request::is('posts') ? 'active' : '' }}"><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
+                <li class="{{ Request::is('resume') ? 'active' : '' }}"><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{{ action('HomeController@showConnect') }}}">Connect</a></li>
+                <li class="{{ Request::is('connect') ? 'active' : '' }}"><a href="{{{ action('HomeController@showConnect') }}}">Connect</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->

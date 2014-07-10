@@ -98,7 +98,15 @@ class PostsController extends \BaseController {
     public function edit($id)
     {
         $post = Post::find($id);
-        return View::make('posts.create-edit')->with('post', $post);
+        if ($post->canManagePost() )
+        {
+            return View::make('posts.create-edit')->with('post', $post);
+        }
+        else
+        {
+            Session::flash('errorMessage', 'Access Denied');
+            return Redirect::action('PostsController@index');
+        }
     } // end of function edit
 
 
@@ -120,17 +128,26 @@ class PostsController extends \BaseController {
         else
         {
             $post = Post::find($id);
-            $post->title = Input::get('title');
-            $post->body = Input::get('body');
-            $post->save();
-            if (Input::hasFile('image') && Input::file('image')->isValid())
+            if ($post->canManagePost() )
             {
-                $post->addUploadedImage(Input::file('image'));
+                $post->title = Input::get('title');
+                $post->body = Input::get('body');
                 $post->save();
-            } //end if
+                if (Input::hasFile('image') && Input::file('image')->isValid())
+                {
+                    $post->addUploadedImage(Input::file('image'));
+                    $post->save();
+                } //end if
 
-            Session::flash('successMessage', 'Post updated created');
-            return Redirect::action('PostsController@show', $post->id)->with('post', $post);
+                Session::flash('successMessage', 'Post updated created');
+                return Redirect::action('PostsController@show', $post->id)->with('post', $post);
+            }
+            else
+            {
+                Session::flash('errorMessage', 'Access Denied');
+                return Redirect::action('PostsController@index');
+            }
+
         } //end of else
     } // end of update function
 
@@ -144,9 +161,17 @@ class PostsController extends \BaseController {
     public function destroy($id)
     {
         $post = Post::findorFail($id);
-        $post->delete();
-        Session::flash('successMessage', 'Post successfully deleted');
-        return Redirect::action('PostsController@index');
+        if ($post->canManagePost() )
+        {
+            $post->delete();
+            Session::flash('successMessage', 'Post successfully deleted');
+            return Redirect::action('PostsController@index');
+        }
+        else
+        {
+            Session::flash('errorMessage', 'Access Denied');
+            return Redirect::action('PostsController@index');
+        }
     }  //end of destroy function
 
 } //end of PostController

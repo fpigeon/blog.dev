@@ -88,3 +88,11 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+
+// Route::filter(‘post.protect’), function($route)
+// {
+// 	$id = $route->getParameter(‘posts’);
+// 	$post = Post::findById($id);
+// 	if (!Auth:user()->canManagePost($post)) return Redirect::action(‘PostsController@show’, $id)
+// });

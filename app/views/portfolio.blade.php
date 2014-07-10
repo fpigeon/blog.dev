@@ -48,7 +48,7 @@
                 </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-                <a href="#work"><img src="assets/img/portfolio/folio03.png" class="img-responsive"></a>
+                <a href="#work"><img src="assets/img/portfolio/whack_a_mole.jpg" class="img-responsive"></a>
                 <h4>Whack-A-Mole</h4>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, aspernatur, eveniet, eligendi temporibus voluptas fuga voluptatum laborum alias ea rem sint soluta. Totam, maxime, provident porro harum illum.

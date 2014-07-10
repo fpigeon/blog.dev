@@ -9,7 +9,7 @@ class Post extends BaseModel {
     // validation rules for our model properties
     static public $rules = [
     	'title' => 'required|max:100',
-    	'body' => 'required|max:100'
+    	'body' => 'required|max:500'
     ];
 
     public function user()
@@ -32,5 +32,10 @@ class Post extends BaseModel {
         $purifier = new HTMLPurifier($config);
         return $purifier->purify($dirtyHTML);
     } //end of renderBody
+
+    public function canManagePost()
+    {
+        return Auth::check() && (Auth::user()->is_admin || Auth::user()->id == $this->user_id);
+    }
 
 } // end of Post model for our blog posts db
