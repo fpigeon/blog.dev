@@ -141,7 +141,7 @@ class PostsController extends \BaseController {
                 } //end if
 
                 Session::flash('successMessage', 'Post updated created');
-                return Redirect::action('PostsController@show', $post->id)->with('post', $post);
+                return Redirect::action('PostsController@show', $post->slug)->with('post', $post);
             }
             else
             {
