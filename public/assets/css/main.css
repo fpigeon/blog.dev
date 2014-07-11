@@ -283,7 +283,16 @@ background-color: #2C2C29;
 	color: #95a5a6;
 }
 
-
 sm {
 	font-size: 12px;
+}
+
+/* My custom css changes ======================= */
+
+.body-block, .body-block p {
+	color: #000;
+}
+
+.twitter-timeline {
+	margin-top: 25px;
 }

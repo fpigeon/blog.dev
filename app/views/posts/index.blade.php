@@ -5,9 +5,10 @@
 @stop
 
 @section('content')
-<div class="container col-md-8 col-md-offset-2">
-    <div class="row">
-        <div class="col-md-offset-6">
+<div class="container">
+    <!-- login bar -->
+    <div class="col-md-offset-7">
+
             @if (Auth::check())
                  <!-- show user email -->
                  <span class="glyphicon glyphicon-user"></span>{{ auth::user()->email }}
@@ -19,21 +20,36 @@
                  <!-- show login -->
                  <a href="{{ action('HomeController@showLogin') }}" class="btn btn-primary" alt="Log In"><span class="glyphicon glyphicon-log-in"></span> Log In</a>
             @endif
-        </div>
 
     </div>
-    <div class="container col-md-8">
-        <div class="row">
-            <h1>All Blog Posts</h1>
-            <!-- search field -->
-            {{ Form::open(array('action' => 'PostsController@index', 'method' => 'GET')) }}
-                {{ Form::label('search', 'Search Posts') }}
-                {{ Form::text('search') }}
-                <button type="submit" class="btn btn-primary glyphicon glyphicon-search"></button>
-            {{ Form::close() }}
+    <!-- side bar -->
+    <div class="col-md-4 body-block">
+        <div class="logo col-md-offset-3">
+            <img src="/assets/img/avatar.jpg" width="100" class="img-circle" alt="profile">
         </div>
+        <p class="body-block">
+            Welcome to my Laravel blog from scratch.
+        </p>
+        <p class="body-block">
+            Web Developer, Tech Enthusiast, US Army veteran, bass player, father, husband, servant
+        </p>
 
-        <div class="container desc">
+
+        <!-- search field -->
+        {{ Form::open(array('action' => 'PostsController@index', 'method' => 'GET')) }}
+            {{ Form::label('search', 'Search Posts') }}
+            {{ Form::text('search') }}
+            <button type="submit" class="btn btn-primary glyphicon glyphicon-search"></button>
+        {{ Form::close() }}
+
+        <a class="twitter-timeline" href="https://twitter.com/fpigeonjr" data-widget-id="487629049158590464">Tweets by @fpigeonjr</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <!-- main posts -->
+    <div class="col-md-8">
+        <!-- blog content -->
+        <div class="body-block">
+            <h1>All Blog Posts</h1>
              <!-- display all posts -->
             @foreach ($posts as $post)
                 <h2>{{ link_to_action('PostsController@show', $post->title, array($post->slug) ) }} </h2>
@@ -51,10 +67,6 @@
             <!-- pagination -->
             {{ $posts->links() }}
         </div>
-
     </div>
 </div>
-
-
-
 @stop
