@@ -36,7 +36,7 @@
         <div class="container desc">
              <!-- display all posts -->
             @foreach ($posts as $post)
-                <h2>{{ link_to_action('PostsController@show', $post->title, array($post->id) ) }} </h2>
+                <h2>{{ link_to_action('PostsController@show', $post->title, array($post->slug) ) }} </h2>
                 <h5>written by {{ $post->user->first_name }} {{ $post->user->last_name }}</h5>
                 <hr>
                 <h5><span class="glyphicon glyphicon-time"></span> Posted on {{{ $post->created_at->format('l, F jS Y @ h:i A') }}}</h5>

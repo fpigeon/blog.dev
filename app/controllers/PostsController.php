@@ -63,7 +63,7 @@ class PostsController extends \BaseController {
             $post->user_id = Auth::user()->id;
             $post->title = Input::get('title');
             $post->body = Input::get('body');
-            //$post->body = $purifier->purify(Input::get('body'));
+            $post->slug = '';
             $post->save();
             if (Input::hasFile('image') && Input::file('image')->isValid())
             {
@@ -82,9 +82,9 @@ class PostsController extends \BaseController {
      * @param  int  $id
      * @return Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        $post = Post::findorFail($id);
+        $post = Post::where('slug', $slug)->firstOrFail();
         return View::make('posts.show')->with('post', $post);
     } // end of function show
 
@@ -132,6 +132,7 @@ class PostsController extends \BaseController {
             {
                 $post->title = Input::get('title');
                 $post->body = Input::get('body');
+                $post->slug = '';
                 $post->save();
                 if (Input::hasFile('image') && Input::file('image')->isValid())
                 {

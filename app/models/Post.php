@@ -38,4 +38,10 @@ class Post extends BaseModel {
         return Auth::check() && (Auth::user()->is_admin || Auth::user()->id == $this->user_id);
     }
 
+    public function setSlugAttribute($value)
+    {
+        $value = str_replace(' ', '-', trim($this->title));
+        $this->attributes['slug'] = strtolower($value);
+    }
+
 } // end of Post model for our blog posts db

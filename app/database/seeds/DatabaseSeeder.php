@@ -30,7 +30,7 @@ class UserTableSeeder extends Seeder {
             $user->password = Hash::make('password');
             $user->first_name = 'Code';
             $user->last_name = 'Up' . $i;
-            $user->is_admin = $i % 2;
+            $user->is_admin = 0;
             $user->save();
         }
 
@@ -46,9 +46,10 @@ class PostTableSeeder extends Seeder {
         for ($i = 1; $i <= 10; $i++)
         {
         	$post = new Post();
-            $post->title = 'Post' .  $i;
-            $post->body = Str::random(200, 'alpha');
+            $post->title = 'Post Title ' .  $i;
+            $post->body = "Post Body Stuff" . $i;
             $post->user_id = rand(1, 3);
+            $post->slug = '';
             $post->save();
             sleep(1);
         } //end of for loop
