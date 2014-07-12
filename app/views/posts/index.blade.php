@@ -7,28 +7,29 @@
 @section('content')
 <div class="container">
     <!-- login bar -->
-    <div class="col-md-offset-7">
-
             @if (Auth::check())
+                <div class="row col-md-offset-9">
                  <!-- show user email -->
-                 <span class="glyphicon glyphicon-user"></span>{{ auth::user()->email }}
+                 <span class="glyphicon glyphicon-user"></span>{{ auth::user()->first_name }} {{ auth::user()->last_name }}
                  <!-- show create post -->
                  <a href="{{ action('PostsController@create') }}" class="btn btn-primary btn-sm" alt="New Post"><span class="glyphicon glyphicon-bullhorn"></span> New Post</a>
                  <!-- show logout -->
                  <a href="{{ action('HomeController@logout') }}" class="btn btn-danger btn-sm" alt="Log Out"><span class="glyphicon glyphicon-log-out"></span> Log Out</a>
             @else
+                <div class="row col-md-offset-11">
                  <!-- show login -->
                  <a href="{{ action('HomeController@showLogin') }}" class="btn btn-primary" alt="Log In"><span class="glyphicon glyphicon-log-in"></span> Log In</a>
             @endif
 
     </div>
     <!-- side bar -->
-    <div class="col-md-4 body-block">
-        <div class="logo col-md-offset-3">
+    <div class="col-md-4 centered body-block">
+        <div class="logo">
             <img src="/assets/img/avatar.jpg" width="100" class="img-circle" alt="profile">
         </div>
         <p class="body-block">
-            Welcome to my Laravel blog from scratch.
+            <br>
+            Welcome to my first blog built from scratch in Laravel, PHP, HTML, CSS, and Bootstrap.
         </p>
         <p class="body-block">
             Web Developer, Tech Enthusiast, US Army veteran, bass player, father, husband, servant
@@ -49,7 +50,7 @@
     <div class="col-md-8">
         <!-- blog content -->
         <div class="body-block">
-            <h1>All Blog Posts</h1>
+            <h1>All Frank's Posts</h1>
              <!-- display all posts -->
             @foreach ($posts as $post)
                 <h2>{{ link_to_action('PostsController@show', $post->title, array($post->slug) ) }} </h2>
@@ -64,8 +65,11 @@
             @if ($isSearchFound)
             <a href="{{ action('PostsController@index') }}" class="btn btn-primary btn-small">All Posts</a>
             @endif
-            <!-- pagination -->
-            {{ $posts->links() }}
+            <div class="row centered">
+                <!-- pagination -->
+                {{ $posts->links() }}
+            </div>
+            
         </div>
     </div>
 </div>
