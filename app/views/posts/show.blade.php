@@ -13,12 +13,12 @@
     <!-- display post content   -->
     <h5> {{{ $post->created_at->format('l, F jS Y @ h:i A') }}} </h5>
     <h6> {{{ $post->created_at->diffForHumans() }}} by {{{ $post->user->first_name }}} {{{ $post->user->last_name }}}</h6>
-    <p> {{ $post->renderBody() }} </p>
-
+    <!-- post image -->
     @if ($post->img_path)
         <!-- show image here -->
         <img src=" {{{ $post->img_path }}}" class="img-responsive">
     @endif
+    <p> {{ $post->renderBody() }} </p>
     <!-- delete post button -->
     @if ($post->canManagePost() )
     {{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE')) }}
