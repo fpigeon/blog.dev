@@ -58,6 +58,11 @@
                 <hr>
                 <h5><span class="glyphicon glyphicon-time"></span> Posted on {{{ $post->created_at->format('l, F jS Y @ h:i A') }}}</h5>
                 <hr>
+                 <!-- post image -->
+                @if ($post->img_path)
+                    <!-- show image here -->
+                    <img src=" {{{ $post->img_path }}}" class="img-responsive">
+                @endif
                 <p> {{ Str::limit($post->renderBody(), 200) }} </p>
             @endforeach
 
