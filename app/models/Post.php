@@ -9,7 +9,7 @@ class Post extends BaseModel {
     // validation rules for our model properties
     static public $rules = [
     	'title' => 'required|max:100',
-    	'body' => 'required|max:500'
+    	'body' => 'required|max:5000'
     ];
 
     public function user()
