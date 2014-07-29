@@ -34,9 +34,9 @@
                         <ul id="nav" class="nav">
                             <li class="menu-item"><a class="smoothScroll" href="#summary" title="Summary Statement"><i class="fa fa-user"></i></a></li>
                             <li class="menu-item"><a class="smoothScroll" href="#work" title="Work Experience"><i class="fa fa-suitcase"></i></a></li>
-                            <li class="menu-item"><a class="smoothScroll" href="#education" title="Education"><i class="fa fa-pencil-square-o"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#education" title="Education"><i class="fa fa-graduation-cap"></i></a></li>
                             <li class="menu-item"><a class="smoothScroll" href="#certs" title="Certifications"><i class="fa fa-certificate"></i></a></li>
-                            <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="fa fa-wechat"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="fa fa-retweet"></i></a></li>
                         </ul><!--/ uL#nav -->
                         <ul class="nav navbar-nav navbar-right">
                             <li class="menu-item"><a class="smoothScroll" href="{{{ action('HomeController@showPortfolio') }}}">&laquo; Back to Main Site</a></li>
@@ -74,11 +74,11 @@
                 </div>
                 <div class="col-lg-6">
                     <p>
-                        With over 15 years of IT experience, I'm looking to broaden my horizons into web and mobile development. I'm a U.S. Army veteran, hold a SECRET clearance, and have a Bachelor's Degree in Management, CIS. Fluent in English and Spanish, a focused team player, lifetime learner, heart of a teacher, and excited to take on new challenges that combine my creativity and business sense.
+                        With over 15 years of IT experience, I'm looking to broaden my horizons into web and mobile development. I'm a U.S. Army veteran, hold a SECRET clearance, and have a Bachelor's Degree in Management, CIS. I am fluent in English and Spanish, a focused team player, a lifetime learner, have the heart of a teacher, and am excited to take on new challenges that combine my creativity and business sense.
                     </p>
                 </div>
                 <div class="col-lg-3">
-                    <p><a href="/data/Frank Pigeon Resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a> <sm>DOWNLOAD PDF</sm></p>
+                    <p><a href="/data/Frank Pigeon Resume.docx"><i class="fa fa-file-word-o"></i></a><sm>DOWNLOAD DOCX</sm></p>
                 </div>
 
             </div><!--/.row -->
@@ -99,17 +99,10 @@
                         Self-Employed <br/>
                     </p>
                     <p><more>Platform/Environment: Hypertext Markup Language (HTML), Linux, Mac OSX, VirtualBox, Vagrant, Ansible, Apache, mySQL, PHP, Git, GitHub, JavaScript, jQuery, Cascading Style Sheets (CSS), Bootstrap framework, WordPress Content Management System (CMS), Moment.js API, Adobe Photoshop, Adobe Illustrator, and Adobe Premiere Pro.</more></p>
-                    <ul>
-                        <li>
-                            Design, develop, and maintain web sites and applications using the LAMP Stack.
-                        </li>
-                        <li>
-                            Maintain web site for Hope Arise United Methodist Church using the WordPress CMS.
-                        </li>
-                        <li>
-                            Design and develop web games using Javascript and JQuery.
-                        </li>
-                    </ul>
+                    <p><a href="http://community-helpers.com" target="_blank">Community Helpers</a>: application that connects seniors (givers) that need work done around their home and the youth (helpers) that want to earn some extra money. Built using Laravel, PHP, MySQL, JavaScript, jQuery, and Twitter Bootstrap. Development done in a Vagrant environment. Version control using Git and GitHub. Features a helper/giver dashboard, a job listing for helpers to apply to, and giving the power to the giver to select a helper based on their jobs completed and reviews.</p>
+                    <p><a href="http://frankpigeon.com/posts" target="_blank">Laravel Blog</a>: application for writing and viewing blog posts as well as my portfolio, resume, and social media landing page. Built using Laravel, PHP, MySQL, JavaScript, jQuery, Twitter Bootstrap, CKeditor text editor plugin. Development done in a Vagrant environment. Version control using Git and GitHub. Features user login, blog post creation and viewing, image upload, search functionality, and ability for authors to edit posts.</p>
+                    <p><a href="{{{ action('HomeController@showWhack') }}}" target="_blank" >Whack-A-Mole</a>: first-person video game based on the classic whack-a-mole game. The application features the ability to keep score, maintain a high-score, and a countdown timer. This application was built using PHP, JavaScript, and jQuery.</p>
+                    <p>Design, develop, and maintain the <a href="http://hopearise.com" target="_blank">Hope Arise United Methodist Church</a> website using the Wordpress CMS (Content Management System), edit and upload weekly sermons to YouTube, create online contact forms, and user administration.</p>
                 </div>
                 <div class="col-lg-3">
                     <p><sm>MAY 2014 - CURRENT</sm></p>
@@ -196,9 +189,7 @@
                     </p>
                 </div>
                 <div class="col-lg-3">
-                    <p><sm>2014</sm><br/>
-                    <imp><sm>IN PROGRESS</sm></imp>
-                    </p>
+                    <p><sm>2014</sm></p>
                 </div>
 
                 <div class="col-lg-6 col-lg-offset-3">
