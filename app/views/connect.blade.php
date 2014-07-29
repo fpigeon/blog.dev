@@ -8,7 +8,7 @@
 @section('content')
     <div class="container">
         <div class="logo">
-            <img src="/assets/img/avatar.jpg" width="100" class="img-circle" alt="profile">
+            <img src="/assets/img/avatar.png" width="100" class="img-circle" alt="profile">
         </div>
         <div class="row centered">
             <div class="col-lg-8 col-lg-offset-2 w">
@@ -34,7 +34,7 @@
         <div class="row w centered">
             <br>
             <div class="col-lg-6 col-lg-offset-3">
-                <p>Web Developer, Tech Enthusiast, US Army veteran, bass player, father, husband, servant</p>
+                <p>Web Developer, Tech Enthusiast, U.S. Army veteran, bass player, father, husband, servant</p>
             </div>
         </div>
     </div>

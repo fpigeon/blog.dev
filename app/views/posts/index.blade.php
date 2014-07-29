@@ -25,14 +25,14 @@
     <!-- side bar -->
     <div class="col-md-4 centered body-block">
         <div class="logo">
-            <img src="/assets/img/avatar.jpg" width="100" class="img-circle" alt="profile">
+            <img src="/assets/img/avatar.png" width="100" class="img-circle" alt="profile">
         </div>
         <p class="body-block">
             <br>
             Welcome to my first blog built from scratch in Laravel, PHP, HTML, CSS, and Bootstrap.
         </p>
         <p class="body-block">
-            Web Developer, Tech Enthusiast, US Army veteran, bass player, father, husband, servant
+            Web Developer, Tech Enthusiast, U.S. Army veteran, bass player, father, husband, servant
         </p>
 
 
