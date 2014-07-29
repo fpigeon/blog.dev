@@ -147,7 +147,7 @@ class PostsController extends \BaseController {
             else
             {
                 Session::flash('errorMessage', 'Access Denied');
-                return Redirect::action('PostsController@index');
+                return Redirect::action('PostsController@index', $jobs->id);
             }
 
         } //end of else
