@@ -90,6 +90,29 @@
                 </p>
             </div>
         </div><! --/row -->
+        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+                <a href="{{{ action('PostsController@index') }}}"><img src="/img/blog.jpg" class="img-responsive"></a>
+                <h4>Laravel Blog</h4>
+                <p>
+                    Application for writing and viewing blog posts as well as my portfolio, resume, and social media landing page. Built using Laravel, PHP, MySQL, JavaScript, jQuery, Twitter Bootstrap, CKeditor text editor plugin. Development done in a Vagrant environment. Version control using Git and GitHub. Features user login, blog post creation and viewing, image upload, search functionality, and ability for authors to edit posts.
+                </p>
+                <p>
+                    <a href="{{{ action('PostsController@index') }}}" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
+                    <a href="https://github.com/fpigeon/blog.dev" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+                <a href="http://community-helpers.com"><img src="/img/comm_helpers.jpg" class="img-responsive"></a>
+                <h4>Community Helpers</h4>
+                <p>
+                    Application that connects seniors (givers) that need work done around their home and the youth (helpers) that want to earn some extra money. Built using Laravel, PHP, MySQL, JavaScript, jQuery, and Twitter Bootstrap. Development done in a Vagrant environment. Version control using Git and GitHub. Features a helper/giver dashboard, a job listing for helpers to apply to, and giving the power to the giver to select a helper based on their jobs completed and reviews.
+                </p>
+                <p>
+                    <a href="http://community-helpers.com" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
+                    <a href="https://github.com/HexagonStorms/community-helpers" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
+                </p>
+            </div>
+        </div><! --/row -->
     </div><! --/container -->
 
     <div id="social">
