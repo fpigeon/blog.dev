@@ -57,7 +57,7 @@
                 <div class="col-lg-12">
                     <!-- banner has text -->
                     <h1>Frank S. Pigeon Jr.</h1>
-                    <h3>Web Developer | frank.pigeonjr@gmail.com</h3>
+                    <h3>Full Stack Web Developer | frank.pigeonjr@gmail.com</h3>
                 </div><!--/.col-lg-12 -->
             </div><!--/.row -->
         </div><!--/.container -->
@@ -78,7 +78,7 @@
                     </p>
                 </div>
                 <div class="col-lg-3">
-                    <p><a href="/data/Frank Pigeon Resume.docx"><i class="fa fa-file-word-o"></i></a><sm>DOWNLOAD DOCX</sm></p>
+                    <p><a href="/data/FrankPigeonJr_Resume.docx"><i class="fa fa-file-word-o"></i></a><sm>DOWNLOAD DOCX</sm></p>
                 </div>
 
             </div><!--/.row -->
