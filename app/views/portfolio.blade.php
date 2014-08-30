@@ -22,7 +22,42 @@
     <div class="container">
         <div class="row centered mt mb">
             <h1>My Portfolio</h1>
+            <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+                <a href="{{{ action('PostsController@index') }}}"><img src="/img/blog.jpg" class="img-responsive"></a>
+                <h4>Laravel Blog</h4>
+                <p>
+                    Application for writing and viewing blog posts as well as my portfolio, resume, and social media landing page. Built using Laravel, PHP, MySQL, JavaScript, jQuery, Twitter Bootstrap, CKeditor text editor plugin. Development done in a Vagrant environment. Version control using Git and GitHub. Features user login, blog post creation and viewing, image upload, search functionality, and ability for authors to edit posts.
+                </p>
+                <p>
+                    <a href="{{{ action('PostsController@index') }}}" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
+                    <a href="https://github.com/fpigeon/blog.dev" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+                <a href="http://community-helpers.com"><img src="/img/comm_helpers.jpg" class="img-responsive"></a>
+                <h4>Community Helpers</h4>
+                <p>
+                    Application that connects seniors (givers) that need work done around their home and the youth (helpers) that want to earn some extra money. Built using Laravel, PHP, MySQL, JavaScript, jQuery, and Twitter Bootstrap. Development done in a Vagrant environment. Version control using Git and GitHub. Features a helper/giver dashboard, a job listing for helpers to apply to, and giving the power to the giver to select a helper based on their jobs completed and reviews.
+                </p>
+                <p>
+                    <a href="http://community-helpers.com" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
+                    <a href="https://github.com/HexagonStorms/community-helpers" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+                <a href="{{{ action('HomeController@showWhack') }}}"><img src="assets/img/portfolio/whack_a_mole.jpg" class="img-responsive"></a>
+                <h4>Whack-A-Mole</h4>
+                <p>
+                    First-person video game based on the classic whack-a-mole game. The game randomly has moles pop out of holes and the object of the game is to hit the moles and have them go back in their hole. The application features the ability to keep score, maintain a high-score, and a countdown timer. Written in PHP, JavaScript, and jQuery.
+                </p>
+                <p>
+                    <a href="{{{ action('HomeController@showWhack') }}}" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
 
+                    <a href="https://github.com/fpigeon/Codeup_Web_Exercises/blob/master/public/whack.html" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
+                </p>
+            </div>
+        </div><! --/row -->
+        <div class="row centered mt mb">
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
                 <a href="https://github.com/fpigeon/Web_Todo_List"><img src="assets/img/portfolio/todo.jpg" class="img-responsive"></a>
                 <h4>Todo List</h4>
@@ -47,18 +82,7 @@
                     <a href="https://github.com/fpigeon/Codeup_Web_Exercises/blob/master/public/address_book.php" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-                <a href="{{{ action('HomeController@showWhack') }}}"><img src="assets/img/portfolio/whack_a_mole.jpg" class="img-responsive"></a>
-                <h4>Whack-A-Mole</h4>
-                <p>
-                    The game randomly has moles pop out of holes and the object of the game is to hit the moles and have them go back in their hole. Bonus features include timer and high score.  Written in jQuery, HTML, and CSS.
-                </p>
-                <p>
-                    <a href="{{{ action('HomeController@showWhack') }}}" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
 
-                    <a href="https://github.com/fpigeon/Codeup_Web_Exercises/blob/master/public/whack.html" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
-                </p>
-            </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
                 <a href="https://github.com/fpigeon/High_Low"><img src="assets/img/portfolio/code.jpg" class="img-responsive"></a>
                 <h4>High Low Game</h4>
@@ -69,6 +93,8 @@
                     <a href="https://github.com/fpigeon/High_Low" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
+        </div><! --/row -->
+        <div class="row centered mt mb">
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
                 <a href="https://github.com/fpigeon/Regis-University-CS-classwork"><img src="assets/img/portfolio/regis.jpg" class="img-responsive"></a>
                 <h4>Regis University Classwork</h4>
@@ -87,29 +113,6 @@
                 </p>
                 <p>
                     <a href="https://github.com/fpigeon/CodeUp_Exercises/blob/master/fizzbuzz.php" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
-                </p>
-            </div>
-        </div><! --/row -->
-        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-                <a href="{{{ action('PostsController@index') }}}"><img src="/img/blog.jpg" class="img-responsive"></a>
-                <h4>Laravel Blog</h4>
-                <p>
-                    Application for writing and viewing blog posts as well as my portfolio, resume, and social media landing page. Built using Laravel, PHP, MySQL, JavaScript, jQuery, Twitter Bootstrap, CKeditor text editor plugin. Development done in a Vagrant environment. Version control using Git and GitHub. Features user login, blog post creation and viewing, image upload, search functionality, and ability for authors to edit posts.
-                </p>
-                <p>
-                    <a href="{{{ action('PostsController@index') }}}" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
-                    <a href="https://github.com/fpigeon/blog.dev" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
-                </p>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-                <a href="http://community-helpers.com"><img src="/img/comm_helpers.jpg" class="img-responsive"></a>
-                <h4>Community Helpers</h4>
-                <p>
-                    Application that connects seniors (givers) that need work done around their home and the youth (helpers) that want to earn some extra money. Built using Laravel, PHP, MySQL, JavaScript, jQuery, and Twitter Bootstrap. Development done in a Vagrant environment. Version control using Git and GitHub. Features a helper/giver dashboard, a job listing for helpers to apply to, and giving the power to the giver to select a helper based on their jobs completed and reviews.
-                </p>
-                <p>
-                    <a href="http://community-helpers.com" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
-                    <a href="https://github.com/HexagonStorms/community-helpers" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
         </div><! --/row -->
