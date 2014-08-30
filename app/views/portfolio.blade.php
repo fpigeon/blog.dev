@@ -57,6 +57,7 @@
                 </p>
             </div>
         </div><! --/row -->
+
         <div class="row centered mt mb">
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
                 <a href="https://github.com/fpigeon/Web_Todo_List"><img src="assets/img/portfolio/todo.jpg" class="img-responsive"></a>
@@ -65,8 +66,6 @@
                     The application was built using PHP, MySQL, HTML and CSS and it allows for adding new items, removing completed items, and uploading a todo list.
                 </p>
                 <p>
-                    <!-- <a href="#" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a> -->
-
                     <a href="https://github.com/fpigeon/Web_Todo_List" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
@@ -77,24 +76,9 @@
                     The application was built using PHP, MySQL, HTML and CSS and it allows for adding new addresses, removing completed addresses, and uploading an exisiting address book.
                 </p>
                 <p>
-                    <!-- <a href="#" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a> -->
-
                     <a href="https://github.com/fpigeon/Codeup_Web_Exercises/blob/master/public/address_book.php" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-                <a href="https://github.com/fpigeon/High_Low"><img src="assets/img/portfolio/code.jpg" class="img-responsive"></a>
-                <h4>High Low Game</h4>
-                <p>
-                    The game picks a random number between 1 and 100. It prompts the user to take a guess and outputs higher, lower, or good guess. Written in PHP.
-                </p>
-                <p>
-                    <a href="https://github.com/fpigeon/High_Low" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
-                </p>
-            </div>
-        </div><! --/row -->
-        <div class="row centered mt mb">
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
                 <a href="https://github.com/fpigeon/Regis-University-CS-classwork"><img src="assets/img/portfolio/regis.jpg" class="img-responsive"></a>
                 <h4>Regis University Classwork</h4>
@@ -103,6 +87,19 @@
                 </p>
                 <p>
                     <a href="https://github.com/fpigeon/Regis-University-CS-classwork" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
+                </p>
+            </div>
+        </div><! --/row -->
+
+        <div class="row centered mt mb">
+            <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+                <a href="https://github.com/fpigeon/High_Low"><img src="assets/img/portfolio/code.jpg" class="img-responsive"></a>
+                <h4>High Low Game</h4>
+                <p>
+                    The game picks a random number between 1 and 100. It prompts the user to take a guess and outputs higher, lower, or good guess. Written in PHP.
+                </p>
+                <p>
+                    <a href="https://github.com/fpigeon/High_Low" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
