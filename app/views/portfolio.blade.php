@@ -45,17 +45,17 @@
                 </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-                <a href="{{{ action('HomeController@showWhack') }}}"><img src="assets/img/portfolio/whack_a_mole.jpg" class="img-responsive"></a>
-                <h4>Whack-A-Mole</h4>
+                <a href="http://pigeon-music.com"><img src="/assets/img/portfolio/pigeon-music.jpg" class="img-responsive"></a>
+                <h4>Pigeon Music</h4>
                 <p>
-                    First-person video game based on the classic whack-a-mole game. The game randomly has moles pop out of holes and the object of the game is to hit the moles and have them go back in their hole. The application features the ability to keep score, maintain a high-score, and a countdown timer. Written in PHP, JavaScript, and jQuery.
+                    Music teacher's school website that allows for sharing music resources with parents and students. Built using Laravel, PHP, JavaScript, jQuery, and Twitter Bootstrap. Development done in a Vagrant environment. Version control using Git and GitHub. Features music videos with and without accompaniment, choir information, biography, and a contact page.
                 </p>
                 <p>
-                    <a href="{{{ action('HomeController@showWhack') }}}" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
-
-                    <a href="https://github.com/fpigeon/Codeup_Web_Exercises/blob/master/public/whack.html" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
+                    <a href="http://pigeon-music.com" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
+                    <a href="https://github.com/fpigeon/pigeon-music" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
+
         </div><! --/row -->
 
         <div class="row centered mt mb">
@@ -80,13 +80,15 @@
                 </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-                <a href="https://github.com/fpigeon/Regis-University-CS-classwork"><img src="assets/img/portfolio/regis.jpg" class="img-responsive"></a>
-                <h4>Regis University Classwork</h4>
+                <a href="{{{ action('HomeController@showWhack') }}}"><img src="assets/img/portfolio/whack_a_mole.jpg" class="img-responsive"></a>
+                <h4>Whack-A-Mole</h4>
                 <p>
-                    Check out my project exercises for the Computer Science courses I completed at Regis University. Written in C++.
+                    First-person video game based on the classic whack-a-mole game. The game randomly has moles pop out of holes and the object of the game is to hit the moles and have them go back in their hole. The application features the ability to keep score, maintain a high-score, and a countdown timer. Written in PHP, JavaScript, and jQuery.
                 </p>
                 <p>
-                    <a href="https://github.com/fpigeon/Regis-University-CS-classwork" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
+                    <a href="{{{ action('HomeController@showWhack') }}}" class="btn btn-warning" role="button" target="_blank"> View Live <span><i class="fa fa-play-circle"></i></span></a>
+
+                    <a href="https://github.com/fpigeon/Codeup_Web_Exercises/blob/master/public/whack.html" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
         </div><! --/row -->
@@ -110,6 +112,16 @@
                 </p>
                 <p>
                     <a href="https://github.com/fpigeon/CodeUp_Exercises/blob/master/fizzbuzz.php" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+                <a href="https://github.com/fpigeon/Regis-University-CS-classwork"><img src="assets/img/portfolio/regis.jpg" class="img-responsive"></a>
+                <h4>Regis University Classwork</h4>
+                <p>
+                    Check out my project exercises for the Computer Science courses I completed at Regis University. Written in C++.
+                </p>
+                <p>
+                    <a href="https://github.com/fpigeon/Regis-University-CS-classwork" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
         </div><! --/row -->
