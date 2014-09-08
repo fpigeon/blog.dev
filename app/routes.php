@@ -39,8 +39,9 @@ Route::get('/login', 'HomeController@showLogin');
 Route::post('/login', 'HomeController@doLogin');
 Route::get('/logout', 'HomeController@logout');
 
-//Posts controller
+//Restful controllers
 Route::resource('posts', 'PostsController');
+Route::resource('visitors', 'VisitorController');
 
 //testing connection to db
 Route::get('orm-test', function()
