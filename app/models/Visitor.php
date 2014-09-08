@@ -9,14 +9,14 @@ class Visitor extends BaseModel {
     static public $rules = [
         'first_name' => 'required|max:50',
         'last_name' => 'required|max:50',
-        'email' => 'required|email|unique',
+        'email' => 'required|unique:visitors',
         'phone_number' => 'required',
         'street' => 'required|max:50',
         'city' => 'required',
-        'state' => 'required|max:2',
+        'state' => 'required',
         'zip' => 'required|digits:5',
         'find' => 'required',
-        'budget' => 'required|numeric'
+        'budget' => 'required'
     ];
 
 } // end of Visitor model

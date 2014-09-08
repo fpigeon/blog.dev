@@ -12,7 +12,7 @@
 			<hr />
 			<div class="row">
 				<div class="col-sm-12">
-					{{ Form::open(array('action' => 'HomeController@doLogin', 'role' => 'form') )}}
+					{{ Form::open(array('action' => 'VisitorController@store', 'role' => 'form') )}}
 						<div class="row">
 							<div class="col-sm-12" >
 								<div class="well">
@@ -34,8 +34,8 @@
 										{{ $errors->first('email', '<span class="help-block">:message</span>')}}
 									</div>
 									<div class="form-group">
-										{{ Form::text('phone', null, ['class' => 'form-control', 'placeholder' => 'Phone Number']) }}
-										{{ $errors->first('phone', '<span class="help-block">:message</span>')}}
+										{{ Form::text('phone_number', null, ['class' => 'form-control', 'placeholder' => 'Phone Number']) }}
+										{{ $errors->first('phone_number', '<span class="help-block">:message</span>')}}
 									</div>
 
                                     <h2>Address</h2>
@@ -58,8 +58,8 @@
 									<div class="row">
 										<div class="col-sm-6">
 											<div class="form-group">
-												<select class="form-control" name="state">
-													<option value="NULL">Choose State</option>
+												<select class="form-control" name="state" id="state">
+													<option value="">Choose State</option>
 													<option value="AL">Alabama</option>
 													<option value="AK">Alaska</option>
 													<option value="AZ">Arizona</option>
@@ -156,4 +156,15 @@
 		</div>
 	</div>
 </div>
+@stop
+
+@section('bottomscript')
+@if (isset($visitor))
+<!-- if form has validation issues, state will be sticky -->
+<script>
+   var state = '{{ $visitor->state }}';
+   $("select option[value='" + state + "']").attr("selected","selected");
+</script>
+@endif
+
 @stop
