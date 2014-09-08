@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder {
 
 		$this->call('UserTableSeeder');
 		$this->call('PostTableSeeder');
+        $this->call('VisitorTableSeeder');
 
 	}  //end of function run
 } //end of class DatabaseSeeder
@@ -47,6 +48,32 @@ class PostTableSeeder extends Seeder {
             $post->slug = 'post-'.$i;
             $post->save();
             sleep(1);
+        } //end of for loop
+
+    } //end of function run
+
+} //end of class PostTableSeeder
+class VisitorTableSeeder extends Seeder {
+
+    public function run()
+    {
+        DB::table('visitors')->delete();
+        $faker = Faker\Factory::create();
+
+        for ($i = 1; $i <= 10; $i++)
+        {
+            $visitor = new Visitor();
+            $visitor->first_name = $faker->firstName;
+            $visitor->last_name = $faker->lastName;
+            $visitor->email = $faker->freeEmail;
+            $visitor->phone_number = $faker->phoneNumber;
+            $visitor->street = $faker->streetAddress;
+            $visitor->city = $faker->city;
+            $visitor->state = $faker->state;
+            $visitor->zip = $faker->postcode;
+            $visitor->find = $faker->sentence(100);
+            $visitor->budget = rand(100000.00, 500000.00);
+            $visitor->save();
         } //end of for loop
 
     } //end of function run
