@@ -18,7 +18,7 @@ class CreateVisitorsTable extends Migration {
 	    $table->string('first_name', 20);
         $table->string('last_name', 20);
         $table->string('email', 200)->unique();
-        $table->char('phone_number', 12;
+        $table->char('phone_number', 12);
         $table->string('street', 50);
 		$table->string('apt_num', 50)->nullable();
 		$table->string('city', 50);
