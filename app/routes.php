@@ -33,6 +33,7 @@ Route::get('/resume', 'HomeController@showResume');
 Route::get('/portfolio', 'HomeController@showPortfolio');
 Route::get('/connect', 'HomeController@showConnect');
 Route::get('/whack', 'HomeController@showWhack');
+Route::get('/contact', 'HomeController@showContact');
 //Login and logout
 Route::get('/login', 'HomeController@showLogin');
 Route::post('/login', 'HomeController@doLogin');
