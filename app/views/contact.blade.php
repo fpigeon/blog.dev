@@ -8,7 +8,7 @@
 	<br />
 	<div class="row">
 		<div class="col-sm-12">
-			<h1>Stay Up To Date</h1>
+			<h1>Register with Happy Realtor</h1>
 			<hr />
 			<div class="row">
 				<div class="col-sm-12">
@@ -144,7 +144,7 @@
 									<div class="row">
 										<div class="col-sm-3">
 
-											{{ Form::submit('Submit', ['class' => 'margin-save btn btn-primary btn-lg']) }}
+											{{ Form::submit('Register', ['class' => 'margin-save btn btn-primary btn-lg']) }}
 										</div>
 									</div>
 								</div>

@@ -17,7 +17,7 @@
                 <h3>{{$visitor->last_name}}</h3>
                 <h3>{{$visitor->email}}</h3>
                 <h3>{{$visitor->phone_number}}</h3>
-                <h3>{{$visitor->budget}}</h3>
+                <h3>${{number_format($visitor->budget)}}</h3>
                 <hr>
             @endforeach
 

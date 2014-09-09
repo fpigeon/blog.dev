@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('topscript')
     <!-- Custom styles for this template -->
-    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
 @stop
 @section('content')
 <div class="container col-md-8 col-md-offset-2">
@@ -31,7 +31,7 @@
             <span class="bold">Found Us:</span> {{$visitor->find}}
         </li>
         <li>
-            <span class="bold">Budget:</span> ${{$visitor->budget}}
+            <span class="bold">Budget:</span> ${{number_format($visitor->budget)}}
         </li>
     </ul>
     <div class="col-sm-offset-1">

@@ -296,3 +296,7 @@ sm {
 .twitter-timeline {
 	margin-top: 25px;
 }
+.bold {
+    font-weight: bolder;
+    color: #4a4a4a;
+}
