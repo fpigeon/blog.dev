@@ -11,15 +11,32 @@
         <!-- blog content -->
         <div class="">
             <h1>All Vistors</h1>
-             <!-- display all posts -->
-            @foreach ($visitors as $visitor)
-                <h2>{{ link_to_action('VisitorController@show', $visitor->first_name, array($visitor->id) ) }} </h2>
-                <h3>{{$visitor->last_name}}</h3>
-                <h3>{{$visitor->email}}</h3>
-                <h3>{{$visitor->phone_number}}</h3>
-                <h3>${{number_format($visitor->budget)}}</h3>
-                <hr>
-            @endforeach
+
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Budget</th>
+                    <th>Action</th>
+                </tr>
+                @foreach ($visitors as $visitor)
+                <tr>
+                    <td>{{$visitor->first_name}}</td>
+
+                    <td>{{$visitor->last_name}}</td>
+
+                    <td>{{$visitor->email}}</td>
+
+                    <td>{{$visitor->phone_number}}</td>
+
+                    <td>${{number_format($visitor->budget)}}</td>
+
+                    <td><a href="{{ action('VisitorController@show', $visitor->id)}}"><button class="btn btn-success btn-sm">Select</button></a></td>
+                </tr>
+                @endforeach
+            </table>
 
             <!-- pagination -->
             {{ $visitors->links() }}
