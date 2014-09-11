@@ -17,7 +17,7 @@ class Visitor extends BaseModel {
         'zip' => 'required|digits:5',
         'find' => 'required',
         'budget' => 'required'
-        // 'recaptcha_response_field' => 'required|recaptcha'
+        'recaptcha_response_field' => 'required|recaptcha'
     ];
 
 } // end of Visitor model
