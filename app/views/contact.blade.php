@@ -136,7 +136,7 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="form-group">
-                                                {{ Form::text('budget', null, ['class' => 'form-control', 'placeholder' => '$250,000']) }}
+                                                {{ Form::text('budget', null, ['class' => 'form-control', 'placeholder' => '250000']) }}
                                                 {{ $errors->first('budget', '<span class="help-block">:message</span>')}}
                                             </div>
                                     </div>
@@ -145,7 +145,7 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="form-group">
-                                                {{Form::captcha()}}
+                                            	
                                             </div>
                                     </div>
                                     </div>
