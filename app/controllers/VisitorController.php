@@ -61,9 +61,17 @@ class VisitorController extends \BaseController {
             $visitor->budget = Input::get('budget');
             $visitor->save();
 
-        Mail::send('visitors.mails.welcome', array('first_name'=>Input::get('first_name')), function($message){
-        $message->to(Input::get('email'), Input::get('first_name').' '.Input::get('last_name'))->subject('New User Has Registered');
-    });
+            $data = array(
+                'first_name' => "$visitor->first_name",
+                'last_name' => "$visitor->last_name",
+                'email' => "$visitor->email"
+            );
+
+            Mail::send('visitors.mails.welcome', $data, function($message) use ($visitor)
+            {
+                $message->to( $visitor->email, 'New User')->subject('Thank you for registering');
+            });
+
             Session::flash('successMessage', 'Thanks for registering for Happy Realtor');
             return Redirect::action('VisitorController@index');
         } //end of else
