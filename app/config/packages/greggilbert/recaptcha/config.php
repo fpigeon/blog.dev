@@ -12,7 +12,7 @@ return array(
 	*/
 	'public_key'	=> '6LckEfoSAAAAAK3lCGpZ6hpLKvP1QileuCCIFR47',
 	'private_key'	=> '6LckEfoSAAAAAM1jAOZO071CtpUdRDP8yPYHylej',
-	
+
 	/*
 	|--------------------------------------------------------------------------
 	| Template
@@ -22,5 +22,8 @@ return array(
 	|
 	*/
 	'template'		=> '',
-	
+	'options'		=> array(
+							'theme' => 'white'
+						),
+
 );
