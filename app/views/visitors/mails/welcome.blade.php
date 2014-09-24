@@ -1,6 +1,7 @@
-<h1>Hi Happy Realtor</h1>
+<h1>Thank you for contacting Frank Pigeon</h1>
 
-<p>{{ $first_name }} has registered on Frank Pigeon's Blog.</p>
+<p>{{ $first_name }} has registered on Frank Pigeon's blog.</p>
+<p>Frank will be contacting you soon.</p>
 <p>
-	Find out more on the <a href="http://frankpigeon.com/visitors">Visitors Page</a>.
+	Please see my portfolio at <a href="http://frankpigeon.com">frankpigeon.com</a>.
 </p>
