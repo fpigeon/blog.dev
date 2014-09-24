@@ -62,11 +62,11 @@ class VisitorController extends \BaseController {
             $visitor->save();
 
            Mail::send('visitors.mails.welcome', array('first_name'=>Input::get('first_name')), function($message){
-        $message->to(Input::get('email'), Input::get('first_name').' '.Input::get('last_name'))->subject('Update from Happy Realtor!');
+        $message->to(Input::get('email'), Input::get('first_name').' '.Input::get('last_name'))->subject('Update from Frank Pigeon Blog!');
     });
 
-            Session::flash('successMessage', 'Thanks for registering for Happy Realtor');
-            return Redirect::action('VisitorController@index');
+            Session::flash('successMessage', 'Thanks for registering with Frank Pigeon');
+            return Redirect::action('HomeController@showPortfolio');
         } //end of else
     } // end of store function
 

@@ -25,7 +25,7 @@ class CreateVisitorsTable extends Migration {
 		$table->char('state', 2);
 		$table->char('zip', 5);
 		$table->text('find');
-		$table->decimal('budget', 8,2);
+		$table->string('budget', 20);
 		$table->string('remember_token', 100)->nullable();
 	    $table->timestamps();
 	});

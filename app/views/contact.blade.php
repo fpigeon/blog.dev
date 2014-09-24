@@ -8,7 +8,8 @@
 	<br />
 	<div class="row">
 		<div class="col-sm-12">
-			<h1>Register with Happy Realtor</h1>
+			<h1>Let's Create Something Together</h1>
+			<h4>Request a Quote</h4>
 			<hr />
 			<div class="row">
 				<div class="col-sm-12">
@@ -59,7 +60,12 @@
 										<div class="col-sm-6">
 											<div class="form-group">
 												<select class="form-control" name="state" id="state">
-													<option value="">Choose State</option>
+													@if (isset($visitor))
+														{{$visitor->state}}
+														<option value="{{ $visitor->state }}">Choose State</option>
+													@else
+														<option value="">Choose State</option>
+													@endif
 													<option value="AL">Alabama</option>
 													<option value="AK">Alaska</option>
 													<option value="AZ">Arizona</option>
@@ -123,11 +129,11 @@
 											</div>
 										</div>
 									</div>
-                                    <h2>Additional Info</h2>
+                                    <h2>Project Description</h2>
                                     <div class="row">
                                         <div class="col-md-8">
                                             <div class="form-group">
-                                                {{ Form::textarea('find', null, ['class' => 'form-control', 'placeholder' => 'How did you find out about us?']) }}
+                                                {{ Form::textarea('find', null, ['class' => 'form-control', 'placeholder' => 'Please include how you found us.']) }}
                                                 {{ $errors->first('find', '<span class="help-block">:message</span>')}}
                                             </div>
                                     </div>
@@ -136,7 +142,7 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="form-group">
-                                                {{ Form::text('budget', null, ['class' => 'form-control', 'placeholder' => '250000']) }}
+                                                {{ Form::text('budget', null, ['class' => 'form-control', 'placeholder' => '$1000']) }}
                                                 {{ $errors->first('budget', '<span class="help-block">:message</span>')}}
                                             </div>
                                     </div>
@@ -152,7 +158,7 @@
 									<div class="row">
 										<div class="col-sm-3">
 
-											{{ Form::submit('Register', ['class' => 'margin-save btn btn-primary btn-lg']) }}
+											{{ Form::submit('Send It', ['class' => 'margin-save btn btn-primary btn-lg']) }}
 										</div>
 									</div>
 								</div>

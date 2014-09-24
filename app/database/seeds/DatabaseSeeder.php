@@ -72,7 +72,7 @@ class VisitorTableSeeder extends Seeder {
             $visitor->state = $faker->state;
             $visitor->zip = $faker->postcode;
             $visitor->find = $faker->sentence(100);
-            $visitor->budget = rand(100000.00, 500000.00);
+            $visitor->budget = rand(500.00, 10000.00);
             $visitor->save();
         } //end of for loop
 
