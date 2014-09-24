@@ -54,6 +54,7 @@
                 <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
                 <li class="{{ Request::is('posts') ? 'active' : '' }}"><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
                 <li class="{{ Request::is('resume') ? 'active' : '' }}"><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
+                <li class="{{ Request::is('contact') ? 'active' : '' }}"><a href="{{{ action('HomeController@showContact') }}}">Contact</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li class="{{ Request::is('connect') ? 'active' : '' }}"><a href="{{{ action('HomeController@showConnect') }}}">Connect</a></li>
