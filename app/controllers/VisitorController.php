@@ -2,7 +2,16 @@
 
 class VisitorController extends \BaseController {
 
-	/**
+	 public function __construct()
+    {
+        // call base controller constructor
+        parent::__construct();
+
+        // run auth filter only on index and show
+        $this->beforeFilter('auth', array('only' => array('index', 'show')));
+    } // end __construct
+
+    /**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
