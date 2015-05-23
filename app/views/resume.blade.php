@@ -103,7 +103,7 @@
                     </p>
                 </div>
                 <div class="col-lg-3">
-                    <p><sm>NOV 2014 - CURRENT</sm></p>
+                    <p><sm>NOVEMBER 2014 - CURRENT</sm></p>
                 </div>
 
                 <div class="col-lg-6 col-lg-offset-3">
@@ -127,7 +127,7 @@
                     <p>Provides project management support during the planning, development, testing and implementation of new systems in support of the Army Medical Department, Military Health Systems, and the Medical Command. Support includes project planning, control, reporting, risk management, scheduling, tracking, variance analysis and administrative support throughout the life cycle of the project.</p>
                 </div>
                 <div class="col-lg-3">
-                    <p><sm>JUNE 2010 - CURRENT</sm></p>
+                    <p><sm>JUNE 2010 - NOVEMBER 2014</sm></p>
                 </div>
 
                 <div class="col-lg-6 col-lg-offset-3">
