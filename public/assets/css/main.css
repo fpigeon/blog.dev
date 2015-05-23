@@ -156,6 +156,7 @@ background-color: #2C2C29;
 ---------------------------------------------------*/
 
 /* Header Wrap */
+
 #headerwrap {
 	background: url(/img/pigeon-banner2.jpg) no-repeat center top;
 	margin-top: 60px;
@@ -180,7 +181,7 @@ background-color: #2C2C29;
 #headerwrap h1 {
 	font-size: 80px;
 	color: white;
-	margin: 140px 0px 0px 0px;
+	margin: 140px 0 0 0;
 }
 
 #headerwrap h3 {
@@ -230,7 +231,6 @@ background-color: #2C2C29;
 	color: white;
 }
 
-
 #footwrap t {
 	font-weight: 700;
 }
@@ -249,6 +249,7 @@ background-color: #2C2C29;
 #footwrap .footer-link {
     color: white;
 }
+
 #footwrap .footer-link:hover {
     color: #f85c37;
     text-decoration: none;
@@ -266,8 +267,6 @@ background-color: #2C2C29;
 #c p {
 	color: white
 }
-
-
 
 /* Global Values */
 
