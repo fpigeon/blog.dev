@@ -226,11 +226,7 @@ background-color: #2C2C29;
 	padding-bottom: 50px;
 }
 
-#footwrap p {
-	color: white;
-}
-
-#footwrap h5 {
+#footwrap p  , #footwrap address, #footwrap h5 {
 	color: white;
 }
 
@@ -242,6 +238,21 @@ background-color: #2C2C29;
 #footwrap i {
 	padding-right: 8px;
 	color: #1abc9c;
+}
+
+#footwrap i:hover {
+    color: white;
+    text-decoration: none;
+    outline: 0;
+}
+
+#footwrap .footer-link {
+    color: white;
+}
+#footwrap .footer-link:hover {
+    color: #f85c37;
+    text-decoration: none;
+    outline: 0;
 }
 
 /* Copyright Wrap */
