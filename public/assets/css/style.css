@@ -80,6 +80,24 @@ h1, h2, h3, h4, h5, h6 {
     color: #4a4a4a;
 }
 
+ /* Links */
+a {
+    word-wrap: break-word;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
@@ -110,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 10px;
     padding-bottom: 20px;
     letter-spacing: 4px;
-    font-size: 80px;
+    font-size: 88px;
     font-weight: bold;
 }
 
@@ -119,6 +137,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff
 }
 
+.port-desc {
+  min-height: 140px;
+}
 #social {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -127,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #social i {
     font-size: 40px;
-    color: #4a4a4a
+    color: #4a4a4a;
 }
 
 #social i:hover {
@@ -143,6 +164,14 @@ h1, h2, h3, h4, h5, h6 {
 #footerwrap p {
     color: #f2f2f2;
     margin-left: 10px;
+}
+
+#footerwrap a {
+    color: #f2f2f2;
+}
+
+#footerwrap a:hover {
+    color: #1abc9c;
 }
 
 #workwrap {

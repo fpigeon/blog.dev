@@ -44,6 +44,9 @@
                     <a href="https://github.com/HexagonStorms/community-helpers" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></span></a>
                 </p>
             </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+
+            </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
                 <a href="http://pigeon-music.com"><img src="/assets/img/portfolio/pigeon-music.jpg" class="img-responsive"></a>
                 <h4 class="port-title">Pigeon Music</h4>
@@ -157,7 +160,7 @@
                     <p>Living in amazing Ft. Worth, Texas.</p>
                 </div>
                 <div class="col-md-4">
-                    <a href="mailto:frank.pigeonjr@gmail.com" target="_blank"><p>frank.pigeonjr@gmail.com</p></a>
+                    <a class="footer-link" href="mailto:frank.pigeonjr@gmail.com" target="_blank">frank.pigeonjr@gmail.com</a>
                 </div>
             </div>
         </div>
