@@ -145,6 +145,10 @@ a:after {
 .port-desc {
   min-height: 140px;
 }
+.port-heading {
+    font-size: 56px;
+    font-weight: 300;
+}
 #social {
     padding-top: 50px;
     padding-bottom: 50px;

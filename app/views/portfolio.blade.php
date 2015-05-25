@@ -21,7 +21,7 @@
     <section id="works"></section>
     <div class="container">
         <div class="row centered mt mb">
-            <h1>My Portfolio</h1>
+            <h1 class="port-heading">My Portfolio</h1>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
                 <a href="{{{ action('PostsController@index') }}}"><img src="/img/blog.jpg" class="img-responsive"></a>
                 <h4 class="port-title">Laravel Blog</h4>
