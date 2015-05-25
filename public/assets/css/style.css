@@ -16,6 +16,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
 
 ::-moz-selection {
     background: #f2c2c9;
@@ -142,13 +143,6 @@ a:after {
     font-size: 24px;
 }
 
-.port-desc {
-  min-height: 140px;
-}
-.port-heading {
-    font-size: 56px;
-    font-weight: 300;
-}
 #social {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -241,10 +235,19 @@ a:after {
 
 /*PORTFOLIO*/
 .port-title {
+    font-family: Bree Serif;
     font-size: 20px;
     color: #1abc9c;
 }
 
+.port-heading {
+    font-size: 56px;
+    font-weight: 300;
+}
+
+.port-desc {
+  min-height: 140px;
+}
 
 /* Gallery */
 .gallery {
