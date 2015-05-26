@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Frank Pigeon's Blog'">
-    <meta name="author" content="Fank Pigeon">
+    <meta name="description" content="Frank Pigeon's Resume'">
+    <meta name="author" content="Frank Pigeon">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <title>Frank Pigeon's Blog</title>
+    <title>Frank Pigeon's Resume</title>
     <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
