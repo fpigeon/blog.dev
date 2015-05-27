@@ -19,6 +19,7 @@
         <img src=" {{{ $post->img_path }}}" class="img-responsive">
     @endif
     <p> {{ $post->renderBody() }} </p>
+    <a class="btn" href="{{ action('PostsController@index') }}">Back to All Posts</a>
     <!-- delete post button -->
     @if ($post->canManagePost() )
     {{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE')) }}

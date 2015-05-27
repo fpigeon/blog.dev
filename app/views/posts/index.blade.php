@@ -50,20 +50,21 @@
     <div class="col-md-8">
         <!-- blog content -->
         <div class="body-block">
-            <h1>All Frank's Posts</h1>
+            <h1>Dev Life</h1>
              <!-- display all posts -->
             @foreach ($posts as $post)
                 <h2>{{ link_to_action('PostsController@show', $post->title, array($post->slug) ) }} </h2>
                 <h5>written by {{ $post->user->first_name }} {{ $post->user->last_name }}</h5>
                 <hr>
-                <h5><span class="glyphicon glyphicon-time"></span> Posted on {{{ $post->created_at->format('l, F jS Y @ h:i A') }}}</h5>
+                <h5><span class="glyphicon glyphicon-time"></span> Posted on {{ $post->created_at->format('l, F jS Y @ h:i A') }}</h5>
                 <hr>
                  <!-- post image -->
                 @if ($post->img_path)
-                    <!-- show image here -->
-                    <img src=" {{{ $post->img_path }}}" class="img-responsive">
+                        <a href="{{ action('PostsController@show', array($post->slug) ) }}">
+                            <img  src=" {{ $post->img_path }}" class="img-responsive">
+                        </a>
                 @endif
-                <p> {{ Str::limit($post->renderBody(), 200) }} </p>
+                <p> {{ strip_tags(Str::limit($post->renderBody(), 300)) }} <a href="{{ action('PostsController@show', array($post->slug) ) }}">MORE</a></p>
             @endforeach
 
             <!-- show all posts button on return of a search -->
@@ -74,7 +75,7 @@
                 <!-- pagination -->
                 {{ $posts->links() }}
             </div>
-            
+
         </div>
     </div>
 </div>
