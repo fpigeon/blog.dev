@@ -56,15 +56,15 @@
                 <h2>{{ link_to_action('PostsController@show', $post->title, array($post->slug) ) }} </h2>
                 <h5>written by {{ $post->user->first_name }} {{ $post->user->last_name }}</h5>
                 <hr>
-                <h5><span class="glyphicon glyphicon-time"></span> Posted on {{{ $post->created_at->format('l, F jS Y @ h:i A') }}}</h5>
+                <h5><span class="glyphicon glyphicon-time"></span> Posted on {{ $post->created_at->format('l, F jS Y @ h:i A') }}</h5>
                 <hr>
                  <!-- post image -->
                 @if ($post->img_path)
-                    <a href="{{ action('PostsController@show') }}"
-                        <img src=" {{{ $post->img_path }}}" class="img-responsive">
-                    </a>
+                        <a href="{{ $url = action('PostsController@show', array($post->slug) ) }}">
+                            <img  src=" {{ $post->img_path }}" class="img-responsive">
+                        </a>
                 @endif
-                <p> {{{ Str::limit($post->renderBody(), 200) }}} </p>
+                <p> {{ strip_tags(Str::limit($post->renderBody(), 200)) }} </p>
             @endforeach
 
             <!-- show all posts button on return of a search -->
