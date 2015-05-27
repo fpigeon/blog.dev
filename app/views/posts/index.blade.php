@@ -64,7 +64,7 @@
                             <img  src=" {{ $post->img_path }}" class="img-responsive">
                         </a>
                 @endif
-                <p> {{ strip_tags(Str::limit($post->renderBody(), 200)) }} </p>
+                <p> {{ strip_tags(Str::limit($post->renderBody(), 300)) }} <a href="{{ $url = action('PostsController@show', array($post->slug) ) }}">MORE</a></p>
             @endforeach
 
             <!-- show all posts button on return of a search -->
