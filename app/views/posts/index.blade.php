@@ -60,11 +60,11 @@
                 <hr>
                  <!-- post image -->
                 @if ($post->img_path)
-                        <a href="{{ $url = action('PostsController@show', array($post->slug) ) }}">
+                        <a href="{{ action('PostsController@show', array($post->slug) ) }}">
                             <img  src=" {{ $post->img_path }}" class="img-responsive">
                         </a>
                 @endif
-                <p> {{ strip_tags(Str::limit($post->renderBody(), 300)) }} <a href="{{ $url = action('PostsController@show', array($post->slug) ) }}">MORE</a></p>
+                <p> {{ strip_tags(Str::limit($post->renderBody(), 300)) }} <a href="{{ action('PostsController@show', array($post->slug) ) }}">MORE</a></p>
             @endforeach
 
             <!-- show all posts button on return of a search -->
