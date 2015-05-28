@@ -5,7 +5,7 @@
 @stop
 @section('content')
 <div class="container">
-    <div class=".col-md-8 col-md-offset-2">
+    <div class=".col-md-6 col-md-offset-2">
         @if ($post->canManagePost() )
             <a href="{{ action('PostsController@edit', $post->id) }}"><h1>{{{ $post->title }}}</h1> </a>
         @else
