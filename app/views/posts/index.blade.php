@@ -1,6 +1,7 @@
 @extends('layouts.master')
 @section('topscript')
     <!-- Custom styles for this template -->
+    <link href="/assets/css/style.css" rel="stylesheet">
     <link href="/assets/css/main.css" rel="stylesheet">
 @stop
 
@@ -24,6 +25,7 @@
     </div>
     <!-- side bar -->
     <div class="col-md-4 centered body-block">
+
         <div class="logo">
             <img src="/assets/img/avatar.png" width="100" class="img-circle" alt="profile">
         </div>
@@ -50,21 +52,22 @@
     <div class="col-md-8">
         <!-- blog content -->
         <div class="body-block">
-            <h1>Dev Life</h1>
+            <h1 class="blog-title">Dev Life</h1>
+            <h4 class="blog-subtitle">//random thoughts and writings by Frank Pigeon</h4>
              <!-- display all posts -->
             @foreach ($posts as $post)
-                <h2>{{ link_to_action('PostsController@show', $post->title, array($post->slug) ) }} </h2>
-                <h5>written by {{ $post->user->first_name }} {{ $post->user->last_name }}</h5>
+                <h2 class="list-title">{{ link_to_action('PostsController@show', $post->title, array($post->slug) ) }} </h2>
+                <h5 class="list-author">written by {{ $post->user->first_name }} {{ $post->user->last_name }}</h5>
                 <hr>
-                <h5><span class="glyphicon glyphicon-time"></span> Posted on {{ $post->created_at->format('l, F jS Y @ h:i A') }}</h5>
+                <h5 class="list-date"><span class="glyphicon glyphicon-time"></span> Posted on {{ $post->created_at->format('l, F jS Y @ h:i A') }}</h5>
                 <hr>
                  <!-- post image -->
                 @if ($post->img_path)
                         <a href="{{ action('PostsController@show', array($post->slug) ) }}">
-                            <img  src=" {{ $post->img_path }}" class="img-responsive">
+                            <img  src=" {{ $post->img_path }}" class="img-responsive list-image">
                         </a>
                 @endif
-                <p> {{ strip_tags(Str::limit($post->renderBody(), 300)) }} <a href="{{ action('PostsController@show', array($post->slug) ) }}">MORE</a></p>
+                <p> {{ strip_tags(Str::limit($post->renderBody(), 300)) }} <a class="list-more" href="{{ action('PostsController@show', array($post->slug) ) }}">MORE</a></p>
             @endforeach
 
             <!-- show all posts button on return of a search -->
@@ -79,4 +82,40 @@
         </div>
     </div>
 </div>
+
+<div id="social" class="social__blog">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-xs-6 col-md-3">
+                <a href="https://twitter.com/fpigeonjr" target="_blank"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="https://github.com/fpigeon" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="https://www.linkedin.com/in/frankpigeonjr" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="mailto:frank.pigeonjr@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/social -->
+
+<div id="footerwrap">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-md-4">
+                <p><b>WEB DEVELOPER & COFFEE ADDICT</b></p>
+            </div>
+
+            <div class="col-md-4">
+                <p>Living in amazing Ft. Worth, Texas.</p>
+            </div>
+            <div class="col-md-4">
+                <a class="footer-link" href="mailto:frank.pigeonjr@gmail.com" target="_blank">frank.pigeonjr@gmail.com</a>
+            </div>
+        </div>
+    </div>
+</div><! --/footerwrap -->
 @stop

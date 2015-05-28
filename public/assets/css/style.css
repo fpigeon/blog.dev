@@ -257,3 +257,42 @@ a:after {
 .gallery img:hover {
     opacity: 0.4;
 }
+/*BLOG*/
+.blog-title, .post-title {
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 78px;
+    color: #1abc9c;
+}
+.blog-title {
+    text-align: center;
+}
+
+.blog-subtitle {
+  text-align: center;
+  color: #1abc9c;
+}
+
+.post-content p {
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+}
+
+.post-content h1 {
+  padding-left: 8px;
+}
+
+.list-title a {
+  color: black;
+}
+
+.list-title a:hover {
+    color: #1abc9c;
+}
+
+/*FOOTER*/
+.social__blog {
+    margin-top: 60px;
+}
+
