@@ -133,5 +133,3 @@
 @section('footer')
     @include('includes.footer')
 @stop
-
-
