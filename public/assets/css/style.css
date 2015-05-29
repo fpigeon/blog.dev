@@ -291,8 +291,12 @@ a:after {
     color: #1abc9c;
 }
 
+.btn__save-post {
+    margin-top: 10px;
+    margin-bottom: 160px;
+}
+
 /*FOOTER*/
 .social__blog {
     margin-top: 60px;
 }
-

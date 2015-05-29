@@ -2,6 +2,7 @@
 @section('topscript')
     <!-- Custom styles for this template -->
     <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/pagedown/demo.css" />
     <script type="text/javascript" src="/pagedown/Markdown.Converter.js"></script>
     <script type="text/javascript" src="/pagedown/Markdown.Sanitizer.js"></script>
@@ -33,7 +34,7 @@
         </div>
         <div id="wmd-preview" class="wmd-panel wmd-preview"></div>
 
-        <button type="submit" class="btn btn-sm btn-primary">Save Post</button>
+        <button type="submit" class="btn btn-sm btn-primary btn__save-post">Save Post</button>
     {{ Form::close() }}
 
 </div>
