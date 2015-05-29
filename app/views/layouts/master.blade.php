@@ -74,6 +74,7 @@
     @endif
     <!-- body content starts here -->
     @yield('content')
+    @yield('footer')
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

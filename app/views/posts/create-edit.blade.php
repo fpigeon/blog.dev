@@ -40,6 +40,10 @@
 
 @stop
 
+@section('footer')
+    @include('includes.footer')
+@stop
+
 @section('bottomscript')
 <script type="text/javascript">
             (function () {
