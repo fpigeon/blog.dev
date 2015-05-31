@@ -7,6 +7,7 @@
     <meta name="description" content="Frank Pigeon's Blog'">
     <meta name="author" content="Frank Pigeon">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link href="/assets/css/main.css" rel="stylesheet">
     <title>Frank Pigeon's Blog</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
