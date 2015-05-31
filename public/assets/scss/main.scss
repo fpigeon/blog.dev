@@ -1,0 +1,307 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://Alvarez.is
+ *
+ * Project Name: NYC Design
+ * Version: 1.0
+ * Date: 04-20-2014
+ * URL:
+ */
+
+
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+    text-align: center
+}
+
+.mt {
+    margin-top: 80px;
+}
+
+.mb {
+    margin-bottom: 80px;
+}
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+
+body {
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+
+.bold {
+    font-weight: bolder;
+    color: #4a4a4a;
+}
+
+ /* Links */
+a {
+    word-wrap: break-word;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+ #navbar_top {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#headerwrap {
+    background: url(../img/work.jpg) no-repeat center top;
+    margin-top: -70px;
+    padding-top: 250px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 650px;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap .container {
+    margin-top: -80px;
+}
+
+#headerwrap h1 {
+    color:#ffffff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+    font-size: 88px;
+    font-weight: bold;
+}
+
+#headerwrap h4 {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#social {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f2f2f2;
+}
+
+#social i {
+    font-size: 40px;
+    color: #4a4a4a;
+}
+
+#social i:hover {
+    color: #1abc9c
+}
+
+#footerwrap {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #2f2f2f;
+}
+
+#footerwrap p {
+    color: #f2f2f2;
+    margin-left: 10px;
+}
+
+#footerwrap a {
+    color: #f2f2f2;
+}
+
+#footerwrap a:hover {
+    color: #1abc9c;
+}
+
+#workwrap {
+    background: url(../img/work.jpg) no-repeat center top;
+    margin-top: -70px;
+    padding-top: 250px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 650px;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#workwrap h1 {
+    color:#ffffff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#workwrap h4 {
+    font-weight: 400;
+    color: #ffffff
+}
+
+#aboutwrap {
+    background: url(../img/about.jpg) no-repeat center top;
+    margin-top: -70px;
+    padding-top: 250px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 550px;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*PORTFOLIO*/
+.port-title {
+    font-family: Bree Serif;
+    font-size: 20px;
+    color: #1abc9c;
+}
+
+.port-heading {
+    font-size: 56px;
+    font-weight: 300;
+}
+
+.port-desc {
+  min-height: 140px;
+}
+
+/* Gallery */
+.gallery {
+    margin-top: 30px;
+}
+
+.gallery img:hover {
+    opacity: 0.4;
+}
+/*BLOG*/
+.blog-title, .post-title {
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 78px;
+    color: #1abc9c;
+}
+.blog-title {
+    text-align: center;
+}
+
+.blog-subtitle {
+  text-align: center;
+  color: #1abc9c;
+}
+
+.post-content p {
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+}
+
+.post-content h1 {
+  padding-left: 8px;
+}
+
+.list-title a {
+  color: black;
+}
+
+.list-title a:hover {
+    color: #1abc9c;
+}
+
+.btn__save-post {
+    margin-top: 10px;
+    margin-bottom: 160px;
+}
+
+/*FOOTER*/
+.social__blog {
+    margin-top: 60px;
+}

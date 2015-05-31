@@ -2,7 +2,8 @@
 
 @section('topscript')
 <!-- Custom styles for this template -->
-    <link href="/assets/css/style.css" rel="stylesheet">
+    {{-- <link href="/assets/css/style.css" rel="stylesheet"> --}}
+    <link href="/assets/css/main.css" rel="stylesheet">
 @stop
 
 @section('content')

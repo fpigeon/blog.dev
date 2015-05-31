@@ -5,10 +5,10 @@ var notify = require('gulp-notify');
 var sass = require('gulp-ruby-sass');
 
 gulp.task('css', function() {
-    return sass('public/assets/scss/main2.scss', { style: 'expanded' } )
+    return sass('public/assets/scss/main.scss', { style: 'expanded' } )
         .pipe(autoprefixer('last 5 version', 'ie'))
         .pipe(gulp.dest('public/assets/css'))
-        .pipe(notify({ message: 'All done, master!' }));
+        .pipe(notify({ message: 'All done, Frank!' }));
 });
 
 // gulp-ruby-sass: 1.x
