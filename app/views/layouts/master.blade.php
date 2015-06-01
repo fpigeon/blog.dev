@@ -24,8 +24,7 @@
     <![endif]-->
     @yield('topscript')
 </head>
-<body style="padding-top: 70px">
-
+ @yield('bodytag')
     <!-- navbar -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation" id="navbar_top">
         <div class="container-fluid">
