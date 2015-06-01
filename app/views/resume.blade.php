@@ -8,8 +8,8 @@
     <meta name="author" content="Frank Pigeon">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <title>Frank Pigeon's Resume</title>
-    <!-- Bootstrap core CSS -->
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+     <!-- Bootstrap core CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <!-- Custom styles for this template -->
     <link href="/assets/css/main.css" rel="stylesheet">
     <!-- Custom fonts -->
@@ -25,7 +25,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="resume-body">
     <div id="section-topbar">
         <div id="topbar-inner">
             <div class="container">

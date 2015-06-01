@@ -42,6 +42,9 @@
     margin: 1em 0;
     padding: 0;
   }
+  sm {
+    font-size: 12px;
+  }
   .centered {
     text-align: center;
   }
@@ -49,6 +52,7 @@
     font-weight: bolder;
     color: #4a4a4a;
   }
+
   /*---------------------------------------------------
 	3.1 Topbar
 ---------------------------------------------------*/
@@ -61,6 +65,9 @@
     z-index: 10000;
     overflow: visible;
     font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    a {
+      color: #fff;
+    }
     i {
       font-size: 25px;
     }
@@ -81,11 +88,10 @@
         padding: 0;
       }
       a {
-        color: #fff;
         display: block;
         font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
         text-decoration: none;
-        padding: 18px 20px 18px 20px;
+        padding: 18px 20px;
         border-left: 1px solid #222;
         &:hover {
           background: #222;
@@ -205,9 +211,6 @@
     more {
       color: #95a5a6;
     }
-    sm {
-      font-size: 12px;
-    }
   }
   .body-block, .body-block p {
     color: #000;
@@ -231,9 +234,3 @@
     text-align: center;
   }
 }
-
-
-
-
-
-
