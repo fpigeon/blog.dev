@@ -324,6 +324,5 @@
     <script type="text/javascript" src="/assets/js/smoothscroll.js"></script>
     <script src="/assets/js/Chart.js"></script>
     <script src="/assets/js/bootstrap.js"></script>
-    @yield('bottomscript')
 </body>
 </html>

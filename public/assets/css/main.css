@@ -1,328 +1,177 @@
- /* Author: Carlos Alvarez
- * URL: http://alvarez.is
- *
- * Project Name: Kelvin - Free Bootstrap 3 Resume Theme
- * Version: 1.0
- * URL: http://blacktie.co
- */
-
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+/* ==========================================================================
+   General styles
+   ========================================================================== */
 body {
-  background-color: #f2f2f2;
-    font-family: "Lato";
-    font-weight: 300;
-    font-size: 16px;
-    color: #555;
-
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-}
-
-/* Titles */
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway";
-    font-weight: 300;
-    color: #333;
-}
-
-
-/* Paragraph & Typographic */
-p {
-    line-height: 28px;
-    margin-bottom: 25px;
-}
-
-.centered {
-    text-align: center;
-}
-
-/* Links */
-a {
-    color: #f85c37;
-    word-wrap: break-word;
-
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
-a:hover,
-a:focus {
-    color: #2C2C29;
-    text-decoration: none;
-    outline: 0;
-}
-
-a:before,
-a:after {
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
- hr {
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  /* LINKS */
+  /*PORTFOLIO*/
+  /* GALLERY */
+  /*BLOG*/
+  /*FOOTER*/ }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    color: #4a4a4a; }
+  body ::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none; }
+  body ::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none; }
+  body hr {
     display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
-    padding: 0;
-}
-
-
-/*---------------------------------------------------
-	3.1 Topbar
----------------------------------------------------*/
-
-#section-topbar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 10000;
-	overflow: visible;
-	font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-#section-topbar a {
-  color: #fff;
-}
-
-#topbar-inner {
-	background: #111;
-	line-height: 0;
-	text-align: center;
-}
-
-/*
-	Top Bar
-
-	By default, top navigation bar uses "fixed" position
-*/
-#section-topbar ul#nav {
-	display: inline-block;
-	position: relative;
-	margin: 0;
-	padding: 0;
-
-	border-right: 1px solid #222;
-
-	/* For IE, the outcast */
-	zoom:1;
-	*display: inline;
-}
-
-#section-topbar ul#nav > li {
-	display: block;
-    float: left;
-    padding: 0;
-}
-
-
-#section-topbar ul#nav a {
-  display: block;
-  font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  padding: 18px 20px 18px 20px;
-  border-left: 1px solid #222;
-}
-
-#section-topbar ul#nav a:hover {
-	  background: #222;
-	  text-decoration: none;
-	  border-left: 1px solid #111;
-}
-
-#section-topbar ul#nav .active a {
-		background: #44bbaa;
-		border-left: 1px solid #111;
-}
-
-#section-topbar ul#nav .active a:hover {
-			background: #44bbaa;
-	}
-#section-topbar i {
-	font-size: 25px;
-}
-.nav > li > a:hover, .nav > li > a:focus {
-text-decoration: none;
-background-color: #2C2C29;
-}
-/*---------------------------------------------------
-	SECTION WRAPS
----------------------------------------------------*/
-
-/* Header Wrap */
-
-#headerwrap {
-	background: url(/img/pigeon-banner2.jpg) no-repeat center top;
-	margin-top: 60px;
-	padding-top:140px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 500px;
-	width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#headerwrap h1 {
-	font-size: 80px;
-	color: white;
-	margin: 140px 0 0 0;
-}
-
-#headerwrap h3 {
-	font-size: 20px;
-	color: white;
-}
-
-/* Intro Wrap */
-
-#intro {
-	background: #2c3e50;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	color: white;
-}
-
-#intro h5, p {
-	color: white;
-}
-
-#intro i {
-	color: white;
-	font-size: 20px;
-	padding-right: 8px;
-	vertical-align: middle;
-}
-
-
-#skillswrap {
-	background: #2c3e50;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	color: white;
-}
-
-#skillswrap h5, p {
-	color: white;
-}
-
-#footwrap {
-	background: #2f2f2f;
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-#footwrap p  , #footwrap address, #footwrap h5 {
-	color: white;
-}
-
-#footwrap t {
-	font-weight: 700;
-}
-
-#footwrap i {
-	padding-right: 8px;
-	color: #1abc9c;
-}
-
-#footwrap i:hover {
-    color: white;
-    text-decoration: none;
-    outline: 0;
-}
-
-#footwrap .footer-link {
-    color: white;
-}
-
-#footwrap .footer-link:hover {
-    color: #f85c37;
-    text-decoration: none;
-    outline: 0;
-}
-
-/* Copyright Wrap */
-
-#c {
-	background: #222222;
-	padding-top: 15px;
-	text-align: right;
-}
-
-#c p {
-	color: white
-}
-
-/* Global Values */
-
-.desc {
-	padding-top: 50px;
-}
-
-.desc p {
-	color: #2f2f2f;
-}
-
-.desc t {
-	color: #34495e;
-	font-weight: 700;
-}
-
-.desc imp {
-	padding: 6px;
-	color: white;
-	background: #34495e;
-}
-
-.desc more {
-	color: #95a5a6;
-}
-
-sm {
-	font-size: 12px;
-}
-
-/* My custom css changes ======================= */
-
-.body-block, .body-block p {
-	color: #000;
-}
-
-.twitter-timeline {
-	margin-top: 25px;
-}
-.bold {
+    padding: 0; }
+  body .centered {
+    text-align: center; }
+  body .mt {
+    margin-top: 80px; }
+  body .mb {
+    margin-bottom: 80px; }
+  body .bold {
     font-weight: bolder;
-    color: #4a4a4a;
-}
+    color: #4a4a4a; }
+  body a {
+    word-wrap: break-word;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+            transition: color 0.1s ease-in, background 0.1s ease-in; }
+    body a:before, body a:after {
+      -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+              transition: color 0.1s ease-in, background 0.1s ease-in; }
+  body #navbar_top {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px; }
+  body #headerwrap {
+    background: url(../img/work.jpg) no-repeat center top;
+    margin-top: -70px;
+    padding-top: 250px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 650px;
+    width: 100%;
+    background-size: 100%;
+    background-size: cover; }
+    body #headerwrap h1 {
+      color: #ffffff;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      letter-spacing: 4px;
+      font-size: 88px;
+      font-weight: bold; }
+    body #headerwrap h4 {
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 24px; }
+    body #headerwrap .container {
+      margin-top: -80px; }
+  body #social {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f2f2f2; }
+    body #social i {
+      font-size: 40px;
+      color: #4a4a4a; }
+      body #social i:hover {
+        color: #1abc9c; }
+  body #footerwrap {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #2f2f2f; }
+    body #footerwrap p {
+      color: #f2f2f2;
+      margin-left: 10px; }
+    body #footerwrap a {
+      color: #f2f2f2; }
+      body #footerwrap a:hover {
+        color: #1abc9c; }
+  body #workwrap {
+    background: url(../img/work.jpg) no-repeat center top;
+    margin-top: -70px;
+    padding-top: 250px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 650px;
+    width: 100%;
+    background-size: 100%;
+    background-size: cover; }
+    body #workwrap h1 {
+      color: #ffffff;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      letter-spacing: 4px;
+      font-size: 80px;
+      font-weight: bold; }
+    body #workwrap h4 {
+      font-weight: 400;
+      color: #ffffff; }
+  body #aboutwrap {
+    background: url(../img/about.jpg) no-repeat center top;
+    margin-top: -70px;
+    padding-top: 250px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 550px;
+    width: 100%;
+    background-size: 100%;
+    background-size: cover; }
+  body .port-title {
+    font-family: Bree Serif;
+    font-size: 33px;
+    color: #1abc9c; }
+  body .port-heading {
+    font-size: 56px;
+    font-weight: 300; }
+  body .port-desc {
+    min-height: 140px; }
+  body .gallery {
+    margin-top: 30px; }
+    body .gallery img:hover {
+      opacity: 0.4; }
+  body .blog-title, body .post-title {
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 78px;
+    color: #1abc9c; }
+  body .blog-title {
+    text-align: center; }
+  body .blog-subtitle {
+    text-align: center;
+    color: #1abc9c; }
+  body .post-content p {
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    padding: 3px 10px; }
+  body .post-content h1 {
+    padding-left: 8px; }
+  body .post-content .list-title a {
+    color: black; }
+    body .post-content .list-title a:hover {
+      color: #1abc9c; }
+  body .post-content .btn__save-post {
+    margin-top: 10px;
+    margin-bottom: 160px; }
+  body .social__blog {
+    margin-top: 60px; }
 
-@media(max-width:400px) {
-        #headerwrap {
-            min-height: 420px;
-        }
-        #headerwrap h1 {
-            font-size: 50px;
-            color: white;
-            margin-top: 75px;
-        }
-        #footwrap .row {
-            text-align: center;
-        }
-    }
 
-}
