@@ -2,7 +2,11 @@
 
 @section('topscript')
     <!-- Custom styles for this template -->
-    <link href="/assets/css/connect.css" rel="stylesheet">
+    {{--<link href="/assets/css/connect.css" rel="stylesheet">--}}
+@stop
+
+@section('bodytag')
+    <body class="connect">
 @stop
 
 @section('content')
