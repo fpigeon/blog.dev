@@ -1,8 +1,5 @@
 @extends('layouts.master')
-@section('topscript')
-    <!-- Custom styles for this template -->
-    <link href="/assets/css/main.css" rel="stylesheet">
-@stop
+
 @section('content')
 <div class="container">
     <!-- flash error messages -->
@@ -22,3 +19,4 @@
     <button class="btn btn-sm btn-primary" type="submit">Log in</button>
     {{ Form::close() }}
 </div>
+@stop
