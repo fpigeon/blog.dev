@@ -3,6 +3,9 @@
     <!-- Custom styles for this template -->
     <link href="/assets/css/style.css" rel="stylesheet">
 @stop
+@section('bodytag')
+    <body class="blog">
+@stop
 @section('content')
 <div class="container">
     <div class=".col-md-6 col-md-offset-2">

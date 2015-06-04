@@ -1,9 +1,11 @@
 @extends('layouts.master')
+
 @section('bodytag')
-    <body class="blog">
+    <body class="portfolio-body blog">
 @stop
+
 @section('content')
-<div class="container">
+<div class="container login">
     <!-- login bar -->
             @if (Auth::check())
                 <div class="row col-md-offset-9">
@@ -64,7 +66,7 @@
                             <img  src=" {{ $post->img_path }}" class="img-responsive list-image">
                         </a>
                 @endif
-                <p> {{ strip_tags(Str::limit($post->renderBody(), 300)) }} <a class="list-more" href="{{ action('PostsController@show', array($post->slug) ) }}">MORE</a></p>
+                <p class="list-p"> {{ strip_tags(Str::limit($post->renderBody(), 300)) }} <a class="list-more" href="{{ action('PostsController@show', array($post->slug) ) }}">MORE</a></p>
             @endforeach
 
             <!-- show all posts button on return of a search -->
