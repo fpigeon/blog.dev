@@ -1,0 +1,236 @@
+.resume-body {
+  background-color: #f2f2f2;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  /* Titles */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+  }
+  /* Paragraph & Typographic */
+  p {
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  /* Links */
+  a {
+    color: #f85c37;
+    word-wrap: break-word;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+    &:hover,
+    &:focus {
+      color: #2C2C29;
+      text-decoration: none;
+      outline: 0;
+    }
+    &:before,
+    &:after {
+      transition: color 0.1s ease-in, background 0.1s ease-in;
+    }
+  }
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  sm {
+    font-size: 12px;
+  }
+  .centered {
+    text-align: center;
+  }
+  .bold {
+    font-weight: bolder;
+    color: #4a4a4a;
+  }
+
+  /*---------------------------------------------------
+	3.1 Topbar
+---------------------------------------------------*/
+
+  #section-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    overflow: visible;
+    font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    a {
+      color: #fff;
+    }
+    i {
+      font-size: 25px;
+    }
+    #topbar-inner {
+      background: #111;
+      line-height: 0;
+      text-align: center;
+    }
+    ul#nav {
+      display: inline-block;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      border-right: 1px solid #222;
+      & > li {
+        display: block;
+        float: left;
+        padding: 0;
+      }
+      a {
+        display: block;
+        font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-decoration: none;
+        padding: 18px 20px;
+        border-left: 1px solid #222;
+        &:hover {
+          background: #222;
+          text-decoration: none;
+          border-left: 1px solid #111;
+        }
+      }
+      .active a {
+        background-color: #44bbaa;
+        border-left: 1px solid #111;
+        &:hover {
+          background: #44bbaa;
+        }
+      }
+
+    }
+    .nav > li > a:hover, .nav > li > a:focus {
+      text-decoration: none;
+      background-color: #2C2C29;
+    }
+  }
+  #headerwrap {
+    background: url(/img/pigeon-banner2.jpg) no-repeat center top;
+    margin-top: 60px;
+    padding-top:140px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+    background-size: 100%;
+    background-size: cover;
+    h1 {
+      font-size: 80px;
+      color: white;
+      margin: 140px 0 0 0;
+    }
+    h3 {
+      font-size: 20px;
+      color: white;
+    }
+  }
+  #intro {
+    background: #2c3e50;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+    h5, p {
+      color: white;
+    }
+    i {
+      color: white;
+      font-size: 20px;
+      padding-right: 8px;
+      vertical-align: middle;
+    }
+  }
+  #skillswrap {
+    background: #2c3e50;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+    h5, p {
+      color: white;
+    }
+  }
+  #footwrap {
+    background: #2f2f2f;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    p, address, h5 {
+      color: white;
+    }
+    t {
+      font-weight: 700;
+    }
+    i {
+      padding-right: 8px;
+      color: #1abc9c;
+    &:hover {
+      color: white;
+      text-decoration: none;
+      outline: 0;
+      }
+    }
+    .footer-link {
+      color: white;
+      &:hover {
+        color: #f85c37;
+        text-decoration: none;
+        outline: 0;
+      }
+    }
+  }
+  #c {
+    background: #222222;
+    padding-top: 15px;
+    text-align: right;
+    p {
+      color: white
+    }
+  }
+  .desc {
+    padding-top: 50px;
+    p {
+      color: #2f2f2f;
+    }
+    t {
+      color: #34495e;
+      font-weight: 700;
+    }
+    imp {
+      padding: 6px;
+      color: white;
+      background: #34495e;
+    }
+    more {
+      color: #95a5a6;
+    }
+  }
+  .body-block, .body-block p {
+    color: #000;
+  }
+  .twitter-timeline {
+    margin-top: 25px;
+  }
+
+}  //end of body
+
+@media(max-width:400px) {
+  #headerwrap {
+    min-height: 420px;
+  }
+  #headerwrap h1 {
+    font-size: 50px;
+    color: white;
+    margin-top: 75px;
+  }
+  #footwrap .row {
+    text-align: center;
+  }
+}

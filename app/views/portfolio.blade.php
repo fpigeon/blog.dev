@@ -2,7 +2,11 @@
 
 @section('topscript')
 <!-- Custom styles for this template -->
-    <link href="/assets/css/style.css" rel="stylesheet">
+    {{-- <link href="/assets/css/style.css" rel="stylesheet"> --}}
+
+@stop
+@section('bodytag')
+<body class="portfolio-body" style="padding-top: 70px">
 @stop
 
 @section('content')
@@ -119,7 +123,7 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
                 <a href="https://github.com/fpigeon/Regis-University-CS-classwork"><img src="assets/img/portfolio/regis.jpg" class="img-responsive"></a>
-                <h4 class="port-title">Regis University Classwork</h4>
+                <h4 class="port-title">CS Classwork</h4>
                 <p class="port-desc">
                     Check out my project exercises for the Computer Science courses I completed at Regis University. Written in C++.
                 </p>
