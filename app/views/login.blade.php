@@ -1,7 +1,9 @@
 @extends('layouts.master')
-
+@section('bodytag')
+<body class="blog">
+@stop
 @section('content')
-<div class="container">
+<div class="container login__container">
     <!-- flash error messages -->
     {{ $errors->first('email', '<span class="help-block">:message</span>') }}
     {{ $errors->first('password', '<span class="help-block">:message</span>') }}

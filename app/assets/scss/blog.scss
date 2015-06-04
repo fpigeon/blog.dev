@@ -1,7 +1,49 @@
-.blog{
-  .body-block, .body-block p {
-    color: #000;
+.blog {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  .login__container{
+    margin-top: 70px;
   }
+  // list view
+  .logo {
+    margin-top: 28px;
+  }
+  .login {
+    margin-top: 70px;
+  }
+  .body-block {
+    .timeline {
+      margin-top: 25px;
+    }
+    form {
+      margin-bottom: 25px;
+    }
+  }
+  .list-title {
+    text-transform: capitalize;
+    font-family: Bree Serif;
+    font-size: 30px;
+    color: #1abc9c;
+    a {
+    color: #555;
+    &:hover {
+      color: #1abc9c;
+      }
+    }
+  }
+  .list-image {
+    width: 60%;
+  }
+  .list-p {
+    margin: 30px 0;
+  }
+
+  // detail view
   .blog-title, .post-title {
     font-size: 50px;
     text-transform: uppercase;
@@ -15,22 +57,23 @@
     text-align: center;
     color: #1abc9c;
   }
+  .post-title {
+    margin-top: 100px;
+  }
+  .post-image {
+    max-height: 400px;
+  }
   .post-content {
     p {
       line-height: 26px;
       letter-spacing: 0.5px;
-      padding: 3px 10px;
+      padding: 3px 0;
     }
     h1 {
       padding-left: 8px;
     }
   }
-  .list-title a {
-    color: black;
-  }
-  .list-title a:hover {
-    color: #1abc9c;
-  }
+
   .btn__save-post {
     margin-top: 10px;
     margin-bottom: 160px;
@@ -39,15 +82,15 @@
   .social__blog {
     margin-top: 60px;
   }
-  .twitter-timeline {
-    margin-top: 25px;
-  }
   .bold {
     font-weight: bolder;
     color: #4a4a4a;
   }
 
   @media(max-width:400px) {
+    .list-image {
+      width: 100%;
+    }
     #headerwrap {
       min-height: 420px;
     }

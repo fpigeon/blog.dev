@@ -74,7 +74,7 @@
                 </div>
                 <div class="col-lg-6">
                     <p>
-                        With over 15 years of IT experience, I'm looking to broaden my horizons into web and mobile development. I'm a U.S. Army veteran, hold a SECRET clearance, and have a Bachelor's Degree in Management, CIS. I am fluent in English and Spanish, a focused team player, a lifetime learner, have the heart of a teacher, and am excited to take on new challenges that combine my creativity and business sense.
+                        With over 15 years of IT experience, I'm broadening my horizons into web and mobile development.  I'm a U.S. Army veteran, hold a SECRET clearance, and have a Bachelor's Degree in Management, CIS. I am fluent in English and Spanish, a focused team player, a lifetime learner, and am excited to take on new challenges that combine my creativity and business sense.
                     </p>
                 </div>
                 <div class="col-lg-3">
