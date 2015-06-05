@@ -1,10 +1,10 @@
 @extends('layouts.master')
 @section('topscript')
     <!-- Custom styles for this template -->
-    <link href="/assets/css/style.css" rel="stylesheet">
+    {{-- <link href="/assets/css/style.css" rel="stylesheet"> --}}
 @stop
 @section('bodytag')
-    <body class="blog">
+    <body class="common blog">
 @stop
 @section('content')
 <div class="container">

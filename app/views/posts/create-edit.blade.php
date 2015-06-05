@@ -1,13 +1,19 @@
 @extends('layouts.master')
+
 @section('topscript')
     <!-- Custom styles for this template -->
-    <link href="/assets/css/main.css" rel="stylesheet">
-    <link href="/assets/css/style.css" rel="stylesheet">
+    {{-- <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet"> --}}
     <link rel="stylesheet" type="text/css" href="/pagedown/demo.css" />
     <script type="text/javascript" src="/pagedown/Markdown.Converter.js"></script>
     <script type="text/javascript" src="/pagedown/Markdown.Sanitizer.js"></script>
     <script type="text/javascript" src="/pagedown/Markdown.Editor.js"></script>
 @stop
+
+@section('bodytag')
+<body class="common blog">
+@stop
+
 @section('content')
 <div class="container col-md-8 col-md-offset-2">
     @if (isset($post))

@@ -6,7 +6,7 @@
 @stop
 
 @section('bodytag')
-    <body class="connect">
+    <body class="common connect">
 @stop
 
 @section('content')

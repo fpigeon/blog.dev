@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('bodytag')
-    <body class="portfolio-body blog">
+    <body class="common blog">
 @stop
 
 @section('content')
