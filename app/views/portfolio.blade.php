@@ -6,7 +6,7 @@
 
 @stop
 @section('bodytag')
-<body class="portfolio-body" style="padding-top: 70px">
+<body class="common portfolio" style="padding-top: 70px">
 @stop
 
 @section('content')
