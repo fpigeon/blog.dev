@@ -1,11 +1,7 @@
 .blog {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  color: #555;
-
-  -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
+  .container {
+    margin-top: 70px;
+  }
   .login__container{
     margin-top: 70px;
   }
@@ -56,9 +52,6 @@
   .blog-subtitle {
     text-align: center;
     color: #1abc9c;
-  }
-  .post-title {
-    margin-top: 100px;
   }
   .post-image {
     max-height: 400px;
