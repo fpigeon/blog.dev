@@ -84,5 +84,28 @@
       opacity: 0.4;
     }
   }
+  .btn {
+    border-radius: 0px;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .btn-primary {
+    background-color: $charcoal;
+    border-color: $charcoal;
+    &:hover {
+      border-color: $charcoal;
+      color: $charcoal;
+    }
+  }
+  .btn-warning {
+    background-color: $purple;
+    border-color: $purple;
+    padding: 6px 22px;
+    &:hover{
+      color: $purple;
+      border-color: $purple;
+    }
+  }
   
 }
