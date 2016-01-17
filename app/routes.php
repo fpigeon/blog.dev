@@ -13,7 +13,7 @@
 
 //Routes for blog project
 Route::get('/env', function(){
-	return $_SERVER['APP_ENV'];
+	return $_ENV['APP_ENV'];
 });
 Route::get('/', 'HomeController@showPortfolio');
 Route::get('/resume', 'HomeController@showResume');
