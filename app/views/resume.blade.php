@@ -95,6 +95,18 @@
                 </div>
                 <div class="col-lg-6">
                     <p><t>Web Developer</t><br/>
+                        Business Technology Solutions, G6, AMEDDC&S <br/>
+                    </p>
+                    <p><more>Platform/Environment: Hypertext Markup Language (HTML5), SQL, .NET, SharePoint, JavaScript, jQuery, Cascading Style Sheets (CSS), SASS, Army Publishing Tool (CMS), and the Adobe Creative Suite.</more></p>
+                    <p>
+                        Front-end web design and development.
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <p><sm>AUGUST 2015 - PRESENT</sm></p>
+                </div>
+                <div class="col-lg-6 col-lg-offset-3">
+                    <p><t>Web Developer</t><br/>
                         AM Design <br/>
                     </p>
                     <p><more>Platform/Environment: Hypertext Markup Language (HTML5), Linux, Mac OSX, VirtualBox, Vagrant, Apache, MySQL, PHP, Git, Stash, Grunt, Gulp, JavaScript, jQuery, Cascading Style Sheets (CSS), SASS, WordPress Content Management System (CMS), Harvest, and the Adobe Creative Suite.</more></p>
@@ -103,7 +115,7 @@
                     </p>
                 </div>
                 <div class="col-lg-3">
-                    <p><sm>NOVEMBER 2014 - CURRENT</sm></p>
+                    <p><sm>NOVEMBER 2014 - AUGUST 2015</sm></p>
                 </div>
 
                 <div class="col-lg-6 col-lg-offset-3">
@@ -298,8 +310,8 @@
                         <a class="footer-link" href="mailto:frank.pigeonjr@gmail.com ">frank.pigeonjr@gmail.com</a>
                     </p>
                     <address><t>Address</t><br/>
-                        8251 Bedford Euless Rd #250<br/>
-                        North Richland Hills, TX 76180<br/>
+                        3630 Stanley Rd.<br/>
+                        JBSA Ft. Sam Houston, TX 78234<br/>
                     </address>
                     <p><t>Phone</t><br/>
                          <a class="footer-link" href="tel:210-704-7443">210-704-7443</a>

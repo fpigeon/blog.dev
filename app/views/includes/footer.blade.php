@@ -25,7 +25,7 @@
             </div>
 
             <div class="col-md-4">
-                <p>Living in amazing Ft. Worth, Texas.</p>
+                <p>Living in amazing San Antonio, Texas.</p>
             </div>
             <div class="col-md-4">
                 <a class="footer-link" href="mailto:frank.pigeonjr@gmail.com" target="_blank">frank.pigeonjr@gmail.com</a>

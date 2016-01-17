@@ -27,7 +27,7 @@
                 <a data-toggle="tooltip" title="Linkedin" href="https://www.linkedin.com/in/frankpigeonjr" target="_blank"><i class="fa fa-linkedin"></i></a>
                 <a data-toggle="tooltip" title="GitHub" href="https://github.com/fpigeon" target="_blank"><i class="fa fa-github"></i></a>
                 <a data-toggle="tooltip" title="Blog" href="{{ action('PostsController@index') }}"><i class="fa fa-comment" target="_blank"></i></a>
-                <a data-toggle="tooltip" title="Instagram" href="http://instagram.com/frankpigeonjr" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a data-toggle="tooltip" title="Instagram" href="http://instagram.com/fpigeonjr" target="_blank"><i class="fa fa-instagram"></i></a>
                 <a data-toggle="tooltip" title="Youtube" href="http://www.youtube.com/user/frankpigeonjr" target="_blank"><i class="fa fa-youtube"></i></a>
                 <a data-toggle="tooltip" title="Email" href="mailto:frank.pigeonjr@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
             </div>
@@ -38,7 +38,7 @@
         <div class="row w centered">
             <br>
             <div class="col-lg-6 col-lg-offset-3">
-                <p>Web Developer, Tech Enthusiast, U.S. Army veteran, bass player, father, husband, servant</p>
+                <p>web developer, U.S. Army veteran, bass player, father, husband, servant</p>
             </div>
         </div>
     </div>
