@@ -12,6 +12,9 @@
 */
 
 //Routes for blog project
+Route::get('/env', function(){
+	return getenv('APP_ENV');
+});
 Route::get('/', 'HomeController@showPortfolio');
 Route::get('/resume', 'HomeController@showResume');
 Route::get('/portfolio', 'HomeController@showPortfolio');
