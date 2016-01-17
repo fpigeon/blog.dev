@@ -18,12 +18,12 @@ class CreateVisitorsTable extends Migration {
 	    $table->string('first_name', 20);
         $table->string('last_name', 20);
         $table->string('email', 200)->unique();
-        $table->char('phone_number', 12);
+        $table->char('phone_number', 20);
         $table->string('street', 50);
 		$table->string('apt_num', 50)->nullable();
 		$table->string('city', 50);
-		$table->char('state', 2);
-		$table->char('zip', 5);
+		$table->char('state', 20);
+		$table->char('zip', 20);
 		$table->text('find');
 		$table->string('budget', 20);
 		$table->string('remember_token', 100)->nullable();

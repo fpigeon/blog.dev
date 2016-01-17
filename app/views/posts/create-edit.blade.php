@@ -53,10 +53,10 @@
 
 @section('bottomscript')
 <script type="text/javascript">
-            (function () {
-                var converter1 = Markdown.getSanitizingConverter();
-                var editor1 = new Markdown.Editor(converter1);
-                editor1.run();
-            })();
-        </script>
+    (function () {
+        var converter1 = Markdown.getSanitizingConverter();
+        var editor1 = new Markdown.Editor(converter1);
+        editor1.run();
+    })();
+</script>
 @stop
