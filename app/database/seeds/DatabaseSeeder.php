@@ -66,10 +66,10 @@ class VisitorTableSeeder extends Seeder {
             $visitor->first_name = $faker->firstName;
             $visitor->last_name = $faker->lastName;
             $visitor->email = $faker->freeEmail;
-            $visitor->phone_number = $faker->phoneNumber;
+            $visitor->phone_number = $faker->phoneNumber(10);
             $visitor->street = $faker->streetAddress;
             $visitor->city = $faker->city;
-            $visitor->state = $faker->state;
+            $visitor->state = $faker->state(2);
             $visitor->zip = $faker->postcode;
             $visitor->find = $faker->sentence(100);
             $visitor->budget = rand(500.00, 10000.00);

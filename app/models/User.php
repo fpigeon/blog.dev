@@ -22,10 +22,11 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 	 * @var array
 	 */
 	protected $hidden = array('password', 'remember_token');
+	protected $fillable = array ('email', 'password', 'first_name', 'last_name', 'is_admin');
 
 	public function posts()
 	{
     	return $this->hasMany('Post');
-	} // end of function posts
+	}
 
-} // end of class BaseModeil
+}
